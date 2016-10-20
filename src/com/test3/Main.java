@@ -21,6 +21,7 @@ public class Main {
     public static void main(String[] args){
         Main frame = new Main();
         frame.showButtonDemo();
+
     }
 
     private void prepareGUI(){
