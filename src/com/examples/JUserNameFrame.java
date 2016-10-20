@@ -1,4 +1,4 @@
-package defferent.examples;
+package com.examples;
 
 import javax.swing.*;
 import java.awt.*;
