@@ -13,7 +13,20 @@ public class Main extends JFrame {
         con.setBackground(new Color(0, 153, 0));
 
         JPanel welcomePanel = new JPanel();
-        welcomePanel.setLayout(new BorderLayout());
+        welcomePanel.setLayout(new FlowLayout());
+        welcomePanel.setBackground(new Color(0, 153, 0));
+
+        JLabel welcomeLabel = new JLabel("Welcome to the Mineral Super Trump Game");
+        welcomeLabel.setFont(new java.awt.Font("Arial", Font.BOLD, 32));
+        welcomePanel.add(welcomeLabel);
+
+        JButton newGameBtn = new JButton("NEW GAME");
+        JButton howToPlayBtn = new JButton("How To Play");
+        JButton exitBtn = new JButton("Exit The Game");
+        welcomePanel.add(newGameBtn,BorderLayout.CENTER);
+        welcomePanel.add(howToPlayBtn,BorderLayout.CENTER);
+        welcomePanel.add(exitBtn,BorderLayout.CENTER);
+
         con.add(welcomePanel);
     }
 
