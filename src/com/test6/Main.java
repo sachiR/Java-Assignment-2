@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 
 public class Main extends JFrame {
-    JLabel question = new JLabel("How many players do you want to play with?");
+    JLabel question = new JLabel("Please enter the number of players you like to play with?");
     Font bigFont = new Font("Arial", Font.BOLD, 16);
     JTextField answer = new JTextField(10);
     JButton pressMe = new JButton("Start the game");
@@ -25,10 +25,12 @@ public class Main extends JFrame {
         add(pressMe);
         add(greeting);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         pressMe.addActionListener(e -> {
-            String name = answer.getText();
-            String greet = "Hello, " + name;
-            greeting.setText(greet);
+           // STGame game = new STGame(answer, new STDeck());
+//            String name = answer.getText();
+//            String greet = "Hello, " + name;
+//            greeting.setText(greet);
         });
     }
 
