@@ -67,6 +67,8 @@ public class MainGUI extends JFrame{
                 con.revalidate();
                 con.repaint();
 
+                STGame game = new STGame();
+                game
             }
         });
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
