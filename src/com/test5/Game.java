@@ -1,4 +1,4 @@
-package main.game;
+package com.test5;
 
 public class Game {
     public static void main(String[] args){
