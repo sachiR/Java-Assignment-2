@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MainGUI extends JFrame{
+public class MainGUI extends JFrame {
     // JFrame properties
     final int WIDTH = 800;
     final int HEIGHT = 700;
@@ -26,7 +26,6 @@ public class MainGUI extends JFrame{
         //title,size and layout of the JFrame
         super("THE MINERAL SUPER TRUMP GAME");
         setSize(WIDTH, HEIGHT);
-        setLayout(new BorderLayout());
 
         //welcome label font size
         welcomeLbl.setFont(new java.awt.Font("Serif", Font.BOLD, 30));
@@ -57,21 +56,35 @@ public class MainGUI extends JFrame{
 
         answer.setFont(new java.awt.Font("Arial", Font.BOLD, 25));
         smallWelcomePanel.add(answer);
+        userTesting();
 
         //Adding new game button to the Panel and its action
         newGameBtn.setFont(new java.awt.Font("Arial", Font.ITALIC, 16));
         smallWelcomePanel.add(newGameBtn);
+
         newGameBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 con.remove(welcomePanel);
                 con.revalidate();
                 con.repaint();
 
-                STGame game = new STGame();
-                game
+                PlayPanel startGame = new PlayPanel();
+                startGame.setBackground(new Color(96, 204, 232));
+                con.add(startGame);
             }
         });
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
+    public Integer userTesting() {
+        if (answer.equals(3)){
+            return 3;
+        } else if (answer.equals(4)){
+            return 4;
+        } else if (answer.equals(5)) {
+            return 5;
+        } else {
+            return 4;
+        }
+    }
 }
