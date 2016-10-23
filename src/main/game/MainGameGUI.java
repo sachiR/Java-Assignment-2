@@ -97,15 +97,20 @@ public class MainGameGUI extends JFrame{
         String numOfPlayers = answer.getText();
         int player = Integer.parseInt(numOfPlayers);
 
-        JLabel numOfPlayerLabel = new JLabel("The Number of players are " + player);
-        canvasCentre.add(numOfPlayerLabel);
+//        JLabel numOfPlayerLabel = new JLabel("The Number of players are " + player);
+//        canvasCentre.add(numOfPlayerLabel);
 
         STGame game = new STGame(player);
-        JLabel randomDealerLabel = new JLabel("The Dealer ID is " + game.getDealerID());
-        canvasCentre.add(randomDealerLabel);
+        game.getDealerID();
+        game.getNextPlayer();
+        game.DealCardsToEachPlayer();
 
-       JLabel nextPlayerLabel = new JLabel("The Next Player ID is " + game.getNextPlayer());
-        canvasCentre.add(nextPlayerLabel);
+        game.getPlayer(0);
+
+//        JLabel randomDealerLabel = new JLabel("The Dealer ID is " + game.getDealerID());
+//        canvasCentre.add(randomDealerLabel);
+//       JLabel nextPlayerLabel = new JLabel("The Next Player ID is " + game.getNextPlayer());
+//        canvasCentre.add(nextPlayerLabel);
 
         JButton passBtn = new JButton("Pass");
         canvasSouth.add(passBtn);

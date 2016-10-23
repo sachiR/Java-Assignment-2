@@ -72,6 +72,7 @@ public class STGame {
             }
             this.players.get(p).setCardsInHand(c);      // .CardsInHand = c;
             p = calculateNextPlayerID(p);
+            break;
         }
     }
 }

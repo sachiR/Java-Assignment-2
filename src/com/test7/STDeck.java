@@ -10,9 +10,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.util.*;
 
-/**
- * Created by perersu on 11/10/2016.
- */
 public class STDeck {
     private static final int NUMBER_OF_TIMES_TO_SHUFFLE = 500;
     private static final int NUMBER_OF_CARDS = 60;
