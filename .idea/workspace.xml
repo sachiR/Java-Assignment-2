@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/PlayGamePanel.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/game/STGame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/game/STPlayer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/MainGameGUI.java" afterPath="$PROJECT_DIR$/src/main/game/MainGameGUI.java" />
     </list>
@@ -28,25 +29,46 @@
       <file leaf-file-name="MainGameGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/game/MainGameGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="99">
+              <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#MainGameGUI#0" expanded="false" />
                 <element signature="method#MainGameGUI#0;class#MainGameGUI#0" expanded="false" />
                 <element signature="method#makePanel#0;class#MainGameGUI#0" expanded="false" />
-                <element signature="e#3644#3802#0" expanded="true" />
-                <element signature="e#3801#3802#0" expanded="true" />
+                <element signature="e#3898#4056#0" expanded="true" />
+                <element signature="e#4055#4056#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/test7/PlayPanel.java">
+      <file leaf-file-name="STGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/game/STGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="83" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="83" />
+            <state relative-caret-position="274">
+              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+              <folding>
+                <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#869#870#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#949#950#0" expanded="true" />
+                <element signature="e#995#996#0" expanded="true" />
+                <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
+                <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+                <marker date="1477194243888" expanded="false" signature="1760:1768" ph="&lt;~&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="STPlayer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/game/STPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="2" selection-end-line="33" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -104,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/com/test6/PlayerView.java" />
         <option value="$PROJECT_DIR$/src/com/test6/CardView.java" />
         <option value="$PROJECT_DIR$/src/com/test6/STGame.java" />
-        <option value="$PROJECT_DIR$/src/main/game/STPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/game/MainGUI.java" />
         <option value="$PROJECT_DIR$/src/main/game/STCard.java" />
         <option value="$PROJECT_DIR$/src/main/game/STDeck.java" />
@@ -116,13 +137,14 @@
         <option value="$PROJECT_DIR$/src/dim/Main.java" />
         <option value="$PROJECT_DIR$/src/com/test7/STPlayer.java" />
         <option value="$PROJECT_DIR$/src/com/test7/PlayPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/game/STGame.java" />
         <option value="$PROJECT_DIR$/src/main/game/PlayPanel.java" />
         <option value="$PROJECT_DIR$/src/main/game/GameGUI.java" />
         <option value="$PROJECT_DIR$/src/com/test7/MainGUI.java" />
         <option value="$PROJECT_DIR$/src/com/test7/GameGUI.java" />
         <option value="$PROJECT_DIR$/src/main/game/PlayGamePanel.java" />
+        <option value="$PROJECT_DIR$/src/main/game/STPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/game/MainGameGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/game/STGame.java" />
       </list>
     </option>
   </component>
@@ -233,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Subjects/CP2406/swing" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Subjects/CP2406/darcie" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -682,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477190084287</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Number of players printing">
+      <created>1477190732096</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1477190732096</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -702,6 +731,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -712,7 +742,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -766,7 +795,8 @@
     <MESSAGE value="Main Game GUI" />
     <MESSAGE value="Play Game Panel" />
     <MESSAGE value="different background colours for border layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="different background colours for border layout" />
+    <MESSAGE value="Number of players printing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Number of players printing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -779,7 +809,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/test4/Demo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/test3/JHelloDemo.java" />
     <entry file="file://$PROJECT_DIR$/src/com/test3/JHelloFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/com/examples/JHelloFrame.java" />
@@ -869,14 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test7/STPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test7/STCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -895,21 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test7/STGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
-            <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
-            <element signature="e#1143#1153#0" expanded="false" />
-            <element signature="e#1552#1560#0" expanded="false" />
-            <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test7/CardView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -922,14 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/game/STGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -972,23 +970,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test7/PlayPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="83" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="83" />
+        <state relative-caret-position="170">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test7/STPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="38" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/STPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="2" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/test7/STGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="65" column="1" selection-start-line="2" selection-start-column="0" selection-end-line="65" selection-end-column="1" />
+          <folding>
+            <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/STGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+          <folding>
+            <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
+            <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
+            <marker date="1477194243888" expanded="false" signature="1760:1768" ph="&lt;~&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/game/MainGameGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state relative-caret-position="99">
+          <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#MainGameGUI#0" expanded="false" />
             <element signature="method#MainGameGUI#0;class#MainGameGUI#0" expanded="false" />
             <element signature="method#makePanel#0;class#MainGameGUI#0" expanded="false" />
-            <element signature="e#3644#3802#0" expanded="true" />
-            <element signature="e#3801#3802#0" expanded="true" />
+            <element signature="e#3898#4056#0" expanded="true" />
+            <element signature="e#4055#4056#0" expanded="true" />
           </folding>
         </state>
       </provider>
