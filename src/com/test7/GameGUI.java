@@ -69,7 +69,6 @@ public class GameGUI extends JFrame {
                     String numOfPlayers = answer.getText();
                     int player = Integer.parseInt(numOfPlayers);
 
-
                 }
             });
         }
