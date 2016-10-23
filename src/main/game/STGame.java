@@ -41,24 +41,24 @@ public class STGame {
         return players;
     }
 
-//    public void DealCardsToEachPlayer(){
-//        int p =  calculateNextPlayerID(this._dealerID);
-//        for(int j = 0; j < this._players.size(); j++)
-//        {
-//            List<STCard> c = new ArrayList<STCard>();  // arList<STCard>();
-//            for (int i = 0; i < NUMBER_OF_CARDS_FOR_EACH_PLAYER; i++)
-//            {
-//                c.add(this._deck.getCard(i));
-//                this._deck.getCards().remove(i);     // .RemoveAt(i);
-//            }
-//            this._players.get(p).setCardsInHand(c);      // .CardsInHand = c;
-//            p = calculateNextPlayerID(p);
-//        }
-//    }
+    public void DealCardsToEachPlayer(){
+        int p =  calculateNextPlayerID(this._dealerID);
+        for(int j = 0; j < this._players.size(); j++)
+        {
+            List<STCard> c = new ArrayList<STCard>();  // arList<STCard>();
+            for (int i = 0; i < NUMBER_OF_CARDS_FOR_EACH_PLAYER; i++)
+            {
+                c.add(this._deck.getCard(i));
+                this._deck.getCards().remove(i);     // .RemoveAt(i);
+            }
+            this._players.get(p).setCardsInHand(c);      // .CardsInHand = c;
+            p = calculateNextPlayerID(p);
+        }
+    }
 
     private int calculateNextPlayerID(int p) {
         p++;
-        if(p >= this._players.size()) {
+        if(p > this._players.size()) {
             p = 0;
         }
         return p;

@@ -6,8 +6,6 @@ import java.awt.*;
 public class PlayPanel extends JPanel{
     private int players;
 
-
-
     public PlayPanel(int numOfPlayers){
         setLayout(new FlowLayout());
         this.players = numOfPlayers;
@@ -16,5 +14,8 @@ public class PlayPanel extends JPanel{
         add(playLabel);
         JLabel dealerLabel = new JLabel("The Dealer is "+ game.getDealerID());
         add(dealerLabel);
+        JLabel nextPlayer = new JLabel("The next player is " + game.getNextPlayer());
+        add(nextPlayer);
+
     }
 }
