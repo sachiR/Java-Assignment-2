@@ -71,6 +71,6 @@ public class Cards {
 
         contentPane.add(cardLabel);
         window.add(contentPane);
-    } //main() ends here
+    } //MainGUI() ends here
 } //class ends here
 

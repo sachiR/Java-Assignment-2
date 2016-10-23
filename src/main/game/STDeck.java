@@ -22,8 +22,8 @@ public class STDeck {
     private int cardid = 0;
 
     public STDeck() {
-        ReadXML("C:\\Users\\Sachini\\Documents\\GitHub\\Java-Assignment-2\\src\\Resources\\MstCards_151021.xml");
-        //ReadXML("MstCards_151021.xml");
+        ReadXML("C:\\Users\\Sachini\\Documents\\GitHub\\Java-Assignment-2\\src\\main\\game\\MstCards_151021.xml");
+       // ReadXML("MstCards_151021.xml");
     }
 
     public void ShuffleTheDeck() {
@@ -69,6 +69,7 @@ public class STDeck {
             e.printStackTrace();
         }
     }
+
     private  HashMap<String,ArrayList<String>> getcardDetails(Element element){
         HashMap<String,ArrayList<String>> tempCard = new  HashMap<String,ArrayList<String>> ();
         String cardType = element.getElementsByTagName("key").item(3).getTextContent();

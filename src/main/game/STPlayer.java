@@ -12,8 +12,8 @@ public class STPlayer {
     public STPlayer(int playerID) {
         this._playerID = playerID;
     }
-    public STPlayer(int playerID, String playerName)
-    {
+
+    public STPlayer(int playerID, String playerName) {
         this._playerID = playerID;
         this._playerName = playerName;
     }
@@ -21,16 +21,19 @@ public class STPlayer {
     public void setPlayerID(int playerID) {
         this._playerID = playerID;
     }
+
     public int getPlayerID() {
         return this._playerID;
     }
 
     public void setPlayerName(String playerName){this._playerName = playerName;}
+
     public String getPlayerName(){return this._playerName;}
 
     public void setCardsInHand(List<STCard> cardsInHand) {
         this._cardsInHand = cardsInHand;
     }
+
     public List<STCard> getCardsInHand() {
         return _cardsInHand;
     }

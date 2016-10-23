@@ -43,7 +43,7 @@ public class STGame {
 
     private int calculateNextPlayerID(int p) {
         p++;
-        if (p > this.numPlayers) {
+        if (p >= this.numPlayers) {
             p = 0;
         }
         nextPlayerID = p;
@@ -60,11 +60,11 @@ public class STGame {
         return players;
     }
 
-    public void DealCardsToEachPlayer(){
+    public void dealCardsToEachPlayer(){
         int p =  calculateNextPlayerID(this.dealerID);
         for(int j = 0; j < this.players.size(); j++)
         {
-            List<STCard> c = new ArrayList<STCard>();  // arList<Card>();
+            List<STCard> c = new ArrayList<STCard>();  // arList<STCard>();
             for (int i = 0; i < NUMBER_OF_CARDS_FOR_EACH_PLAYER; i++)
             {
                 c.add(this._deck.getCard(i));
@@ -72,7 +72,18 @@ public class STGame {
             }
             this.players.get(p).setCardsInHand(c);      // .CardsInHand = c;
             p = calculateNextPlayerID(p);
-            break;
         }
     }
+
+    public STCard drawCardFromDeck(int playerID) {
+        STCard c= new STCard();
+
+        if(this._deck.getCards().size()>0){
+            c = this._deck.getCards().get(0);
+            this.players.get(playerID).getCardsInHand().add(c);
+            this._deck.getCards().remove(0);
+        }
+        return c;
+    }
+
 }

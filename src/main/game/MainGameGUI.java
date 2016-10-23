@@ -78,51 +78,50 @@ public class MainGameGUI extends JFrame{
     private void playGame() {
         con.setLayout(new BorderLayout());
 
-        JPanel canvasSouth = makePanel(Color.RED);
+        JPanel canvasSouth = makePanel(new Color(0, 153, 0));
         add(canvasSouth, BorderLayout.SOUTH);
 
-        JPanel canvasNorth = makePanel(Color.BLUE);
+        JPanel canvasNorth = makePanel(new Color(0, 153, 0));
         add(canvasNorth, BorderLayout.NORTH);
 
-        JPanel canvasEast = makePanel(Color.YELLOW);
-        canvasEast.setBackground(Color.YELLOW);
+        JPanel canvasEast = makePanel(new Color(0, 153, 0));
         add(canvasEast, BorderLayout.EAST);
 
-        JPanel canvasWest = makePanel(Color.MAGENTA);
+        JPanel canvasWest = makePanel(new Color(0, 153, 0));
         add(canvasWest, BorderLayout.WEST);
 
-        JPanel canvasCentre = makePanel(Color.pink);
+        JPanel canvasCentre = makePanel(new Color(0, 153, 0));
         add(canvasCentre, BorderLayout.CENTER);
 
         String numOfPlayers = answer.getText();
         int player = Integer.parseInt(numOfPlayers);
 
-//        JLabel numOfPlayerLabel = new JLabel("The Number of players are " + player);
-//        canvasCentre.add(numOfPlayerLabel);
+        JLabel numOfPlayerLabel = new JLabel("The Number of players are " + player);
+        canvasCentre.add(numOfPlayerLabel);
 
         STGame game = new STGame(player);
-        game.getDealerID();
-        game.getNextPlayer();
-        game.DealCardsToEachPlayer();
+        JLabel randomDealerLabel = new JLabel("The Dealer ID is " + game.getDealerID());
+        canvasCentre.add(randomDealerLabel);
+
+        JLabel nextPlayerLabel = new JLabel("The Next Player ID is " + game.getNextPlayer());
+        canvasCentre.add(nextPlayerLabel);
+        game.dealCardsToEachPlayer();
+
+        JButton passBtn = new JButton("Pass");
+        canvasSouth.add(passBtn);
 
         STPlayer playerID = game.getPlayer(0);
         PlayerView playView = new PlayerView(playerID);
         canvasSouth.add(playView);
 
-
-//        JLabel randomDealerLabel = new JLabel("The Dealer ID is " + game.getDealerID());
-//        canvasCentre.add(randomDealerLabel);
-//       JLabel nextPlayerLabel = new JLabel("The Next Player ID is " + game.getNextPlayer());
-//        canvasCentre.add(nextPlayerLabel);
-
-        JButton passBtn = new JButton("Pass");
-        canvasSouth.add(passBtn);
         passBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                game.drawCardFromDeck(0);
             }
         });
-
     }
+
+
 
     protected JPanel makePanel(Color color) {
         JPanel pane = new JPanel() {
