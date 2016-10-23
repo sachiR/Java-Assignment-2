@@ -2,155 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dim/game/A1/Card.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dim/game/A1/Demo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dim/game/A1/STCard.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dim/game/A1/STDeck.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dim/game/A1/STGame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dim/game/A1/STPlayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dim/game/A1/TrumpCard.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dim/game/A1/deck.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dim/game/A1/test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dim/game/Cards.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/main.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide07.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide08.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide09.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide39.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide42.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide43.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide44.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide45.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide46.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide47.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide48.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide49.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide51.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide52.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide53.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide54.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide55.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide56.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide57.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide58.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide59.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide61.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide62.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide63.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide64.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide65.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/images/Slide66.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide01.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide02.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide03.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide04.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide05.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide06.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide06.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide07.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide07.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide08.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide08.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide09.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide09.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide10.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide11.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide12.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide13.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide14.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide15.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide16.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide17.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide17.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide18.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide18.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide19.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide19.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide20.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide20.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide21.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide21.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide22.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide22.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide23.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide23.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide24.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide24.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide25.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide25.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide26.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide26.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide27.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide27.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide28.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide28.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide29.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide29.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide30.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide30.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide31.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide31.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide32.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide32.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide33.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide33.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide34.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide34.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide35.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide35.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide36.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide36.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide37.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide37.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide38.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide38.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide39.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide39.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide40.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide40.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide41.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide41.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide42.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide42.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide43.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide43.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide44.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide44.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide45.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide45.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide46.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide46.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide47.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide47.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide48.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide48.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide49.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide49.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide50.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide50.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide51.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide51.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide52.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide52.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide53.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide53.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide54.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide54.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide55.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide55.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide56.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide56.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide57.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide57.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide58.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide58.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide59.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide59.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide60.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide60.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide61.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide61.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide62.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide62.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide63.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide63.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide64.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide64.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide65.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide65.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/images/Slide66.jpg" afterPath="$PROJECT_DIR$/src/dim/game/images/Slide66.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dim/game/A1/demo.java" afterPath="$PROJECT_DIR$/src/dim/game/A1/demo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/CardView.java" afterPath="$PROJECT_DIR$/src/main/game/CardView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/PlayerView.java" afterPath="$PROJECT_DIR$/src/main/game/PlayerView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/STDeck.java" afterPath="$PROJECT_DIR$/src/main/game/STDeck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/STGame.java" afterPath="$PROJECT_DIR$/src/main/game/STGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dim/game/A1/Demo.java" afterPath="$PROJECT_DIR$/src/dim/game/A1/Demo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dim/game/A1/STDeck.java" afterPath="$PROJECT_DIR$/src/dim/game/A1/STDeck.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dim/game/A1/STPlayer.java" afterPath="$PROJECT_DIR$/src/dim/game/A1/STPlayer.java" />
     </list>
     <ignored path="Java-Assignment-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -174,9 +29,12 @@
       <file leaf-file-name="demo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dim/game/A1/demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="143">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+              <folding>
+                <element signature="e#1330#1331#0" expanded="true" />
+                <element signature="e#1389#1390#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,12 +42,11 @@
       <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dim/game/A1/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#86#87#0" expanded="true" />
                 <element signature="e#114#115#0" expanded="true" />
-                <element signature="e#146#147#0" expanded="true" />
                 <element signature="e#180#181#0" expanded="true" />
               </folding>
             </state>
@@ -199,8 +56,8 @@
       <file leaf-file-name="deck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dim/game/A1/deck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+            <state relative-caret-position="228">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#543#549#0" expanded="true" />
               </folding>
@@ -211,8 +68,8 @@
       <file leaf-file-name="STDeck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STDeck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="25" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -233,21 +90,15 @@
       <file leaf-file-name="STGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="392">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1121#1122#0" expanded="true" />
+                <element signature="e#1159#1160#0" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="STPlayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STPlayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -258,6 +109,19 @@
             <state relative-caret-position="221">
               <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="STPlayer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+              <folding>
+                <element signature="method#STPlayer#0;class#STPlayer#0" expanded="false" />
+                <element signature="method#setCards#0;class#STPlayer#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -325,13 +189,13 @@
         <option value="$PROJECT_DIR$/src/game/main.java" />
         <option value="$PROJECT_DIR$/src/dim/game/A1/Demo.java" />
         <option value="$PROJECT_DIR$/src/dim/game/A1/STGame.java" />
-        <option value="$PROJECT_DIR$/src/dim/game/A1/STPlayer.java" />
         <option value="$PROJECT_DIR$/src/dim/game/A1/STTrumpCard.java" />
         <option value="$PROJECT_DIR$/src/dim/game/A1/TrumpCard.java" />
         <option value="$PROJECT_DIR$/src/dim/game/A1/Card.java" />
         <option value="$PROJECT_DIR$/src/dim/game/A1/deck.java" />
         <option value="$PROJECT_DIR$/src/dim/game/A1/STCard.java" />
         <option value="$PROJECT_DIR$/src/dim/game/A1/STDeck.java" />
+        <option value="$PROJECT_DIR$/src/dim/game/A1/STPlayer.java" />
         <option value="$PROJECT_DIR$/src/dim/game/A1/demo.java" />
       </list>
     </option>
@@ -432,28 +296,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Java-Assignment-2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Java-Assignment-2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="A1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -960,12 +802,19 @@
       <option name="project" value="LOCAL" />
       <updated>1477197111538</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="dEMO">
+      <created>1477207016068</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1477207016068</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -974,12 +823,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921136" sideWeight="0.50292826" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921136" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43533123" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1049,11 +898,12 @@
     <MESSAGE value="STDeck and STCard" />
     <MESSAGE value="Deal cards to each player" />
     <MESSAGE value="CardView and PlayerView" />
-    <option name="LAST_COMMIT_MESSAGE" value="CardView and PlayerView" />
+    <MESSAGE value="dEMO" />
+    <option name="LAST_COMMIT_MESSAGE" value="dEMO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1198,51 +1048,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STPlayer.java">
+    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/test.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/TrumpCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dim/game/A1/Card.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#86#87#0" expanded="true" />
             <element signature="e#114#115#0" expanded="true" />
-            <element signature="e#146#147#0" expanded="true" />
             <element signature="e#180#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dim/game/A1/deck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        <state relative-caret-position="228">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#543#549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1259,25 +1104,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STDeck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="25" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/test.xml">
+    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/TrumpCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <folding>
+            <element signature="method#STPlayer#0;class#STPlayer#0" expanded="false" />
+            <element signature="method#setCards#0;class#STPlayer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dim/game/A1/demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="143">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1389#1390#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

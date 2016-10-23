@@ -31,7 +31,13 @@ public class demo {
         game.selectYouAsPlayer(); // show user player id
         STPlayer humPlayer = game.getHumPlayer(); // how user player id
         showPlayer(humPlayer); // print user id
-        game.playTheGame();
+        STDeck stDeck = new STDeck();
+        STPlayer player= new STPlayer("0");
+
+        for(int i = 0; i < 8;i++) {
+            String card = stDeck.getCards().get(i).toString();
+            System.out.println(card);
+        }
     }
 
     private static void showPlayer(STPlayer humPlayer) {

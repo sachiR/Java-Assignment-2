@@ -24,7 +24,7 @@ public class STDeck {
     private int cardid = 0;
 
     public STDeck() {
-        ReadXML("test.xml");
+        ReadXML("C:\\Users\\Sachini\\Documents\\GitHub\\Java-Assignment-2\\src\\dim\\game\\A1\\test.xml");
     }
 
     private void ReadXML(String fileName){
