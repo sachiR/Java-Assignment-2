@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/test6/CardView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/test6/PlayerView.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Resources/MstCards_151021.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/test7/Guiform1.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/test7/Guiform1.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/MstCards_151021.xml" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/MstCards_151021.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test6/Main.java" afterPath="$PROJECT_DIR$/src/com/test6/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/MainGUI.java" afterPath="$PROJECT_DIR$/src/main/game/MainGUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/PlayPanel.java" afterPath="$PROJECT_DIR$/src/main/game/PlayPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/STCard.java" afterPath="$PROJECT_DIR$/src/main/game/STCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/STDeck.java" afterPath="$PROJECT_DIR$/src/main/game/STDeck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/STGame.java" afterPath="$PROJECT_DIR$/src/main/game/STGame.java" />
     </list>
     <ignored path="Java-Assignment-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,8 +39,8 @@
       <file leaf-file-name="PlayPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/game/PlayPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -667,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477146602001</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="printing the number of players">
+      <created>1477181710118</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1477181710118</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -718,7 +714,8 @@
     <MESSAGE value="get num of players from the user" />
     <MESSAGE value="Assignment 1 work is now been used in assignment 2" />
     <MESSAGE value="Selecting and printing the dealer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Selecting and printing the dealer" />
+    <MESSAGE value="printing the number of players" />
+    <option name="LAST_COMMIT_MESSAGE" value="printing the number of players" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1035,8 +1032,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/game/PlayPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding />
         </state>
       </provider>
