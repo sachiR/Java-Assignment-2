@@ -16,7 +16,7 @@ public class PlayPanel extends JPanel{
         add(dealerLabel);
         JLabel nextPlayer = new JLabel("The next player is " + game.getNextPlayer());
         add(nextPlayer);
-        game.DealCardsToEachPlayer();
+        //game.DealCardsToEachPlayer();
 
     }
 }
