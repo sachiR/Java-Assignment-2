@@ -56,7 +56,7 @@ public class MainGUI extends JFrame {
 
         answer.setFont(new java.awt.Font("Arial", Font.BOLD, 25));
         smallWelcomePanel.add(answer);
-        userTesting();
+
 
         //Adding new game button to the Panel and its action
         newGameBtn.setFont(new java.awt.Font("Arial", Font.ITALIC, 16));
@@ -64,11 +64,13 @@ public class MainGUI extends JFrame {
 
         newGameBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                String numOfPlayers = answer.getText();
+                int player = Integer.parseInt(numOfPlayers);
                 con.remove(welcomePanel);
                 con.revalidate();
                 con.repaint();
 
-                PlayPanel startGame = new PlayPanel();
+                PlayPanel startGame = new PlayPanel(player);
                 startGame.setBackground(new Color(96, 204, 232));
                 con.add(startGame);
             }
@@ -76,15 +78,4 @@ public class MainGUI extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public Integer userTesting() {
-        if (answer.equals(3)){
-            return 3;
-        } else if (answer.equals(4)){
-            return 4;
-        } else if (answer.equals(5)) {
-            return 5;
-        } else {
-            return 4;
-        }
-    }
 }

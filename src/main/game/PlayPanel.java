@@ -4,14 +4,16 @@ import javax.swing.*;
 import java.awt.*;
 
 public class PlayPanel extends JPanel{
-    MainGUI mainGUI = new MainGUI();
-    Integer numOfPlayers = mainGUI.userTesting();
-    STGame game = new STGame(numOfPlayers);
-    JLabel dealerID = new JLabel("The Dealer is "+String.valueOf(game.getDealerID()));
+    private int players;
 
-    public PlayPanel(){
-        setSize(800, 700);
-        setLayout(new BorderLayout());
-        add(dealerID);
+    //JLabel dealerLabel = new JLabel("The Dealer is "+ game.getDealerID());
+
+    public PlayPanel(int numOfPlayers){
+        setLayout(new FlowLayout());
+        this.players = numOfPlayers;
+        STGame game = new STGame(numOfPlayers);
+        JLabel playLabel = new JLabel("The Number of players are " + numOfPlayers);
+        add(playLabel);
+        //add(dealerLabel);
     }
 }

@@ -1,5 +1,8 @@
 package com.test6;
 
+import main.game.STDeck;
+import main.game.STGame;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -22,15 +25,18 @@ public class Main extends JFrame {
         greeting.setFont(bigFont);
         add(question);
         add(answer);
+
         add(pressMe);
         add(greeting);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         pressMe.addActionListener(e -> {
-           // STGame game = new STGame(answer, new STDeck());
-//            String name = answer.getText();
-//            String greet = "Hello, " + name;
-//            greeting.setText(greet);
+            String players = answer.getText();
+            int numOfPlayers = Integer.valueOf(players);
+            STGame game = new STGame(numOfPlayers);
+            JLabel playLabel = new JLabel("The Num Of Players are " + players);
+            add(playLabel);
+
         });
     }
 
