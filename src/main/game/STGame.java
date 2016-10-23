@@ -64,7 +64,7 @@ public class STGame {
         int p =  calculateNextPlayerID(this.dealerID);
         for(int j = 0; j < this.players.size(); j++)
         {
-            List<STCard> c = new ArrayList<STCard>();  // arList<STCard>();
+            List<STCard> c = new ArrayList<STCard>();  // arList<Card>();
             for (int i = 0; i < NUMBER_OF_CARDS_FOR_EACH_PLAYER; i++)
             {
                 c.add(this._deck.getCard(i));

@@ -1,4 +1,5 @@
-package main.game;
+package dim.game.A1;
+
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -8,33 +9,22 @@ import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class STDeck {
     private static final int NUMBER_OF_TIMES_TO_SHUFFLE = 500;
-    private static final int NUMBER_OF_CARDS = 60;
 
     private ArrayList<STCard> _cards = new ArrayList<STCard>();
-
-    public ArrayList<STCard> getCards() { return _cards; }
-    public STCard getCard(int index){return _cards.get(index);}
+    public ArrayList<STCard> getCards() {
+        return _cards;
+    }
 
     private int cardid = 0;
 
     public STDeck() {
-        ReadXML("C:\\Users\\Sachini\\Documents\\GitHub\\Java-Assignment-2\\src\\Resources\\MstCards_151021.xml");
-        //ReadXML("MstCards_151021.xml");
-    }
-
-    public void ShuffleTheDeck() {
-        Random rnd = new Random();
-        for(int i = 0; i< NUMBER_OF_TIMES_TO_SHUFFLE; i++)
-        {
-            int i1 = rnd.nextInt(NUMBER_OF_CARDS-1);
-            int i2 = rnd.nextInt(NUMBER_OF_CARDS-1);
-
-            Collections.swap(_cards,i1,i2);
-        }
+        ReadXML("test.xml");
     }
 
     private void ReadXML(String fileName){
@@ -122,7 +112,7 @@ public class STDeck {
     }
 
     private void AddToDeck(HashMap<String,ArrayList<String>> tempCard){
-        STCard card;  // = new Card();
+        STCard card;  // = new STCard();
         ArrayList<String> temp = new ArrayList<>();
 
         String type = tempCard.get("card_type").get(0);
