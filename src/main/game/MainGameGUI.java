@@ -1,5 +1,7 @@
 package main.game;
 
+import com.test7.STGame;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -23,6 +25,7 @@ public class MainGameGUI extends JFrame{
         MainGameGUI frame = new MainGameGUI();
         frame.setVisible(true);
     }
+
     public MainGameGUI(){
         //title,size and layout of the JFrame
         super("THE MINERAL SUPER TRUMP GAME");
@@ -39,7 +42,7 @@ public class MainGameGUI extends JFrame{
         JPanel welcomePanel = new JPanel();
         welcomePanel.setLayout(new GridLayout(2,1));
         welcomePanel.setBackground(new Color(0, 153, 0));
-        welcomePanel.setPreferredSize(new Dimension(1000, 400));
+        //welcomePanel.setPreferredSize(new Dimension(1000, 400));
 
         con.add(welcomePanel);
         welcomePanel.add(welcomeLbl);
@@ -51,10 +54,10 @@ public class MainGameGUI extends JFrame{
         smallWelcomePanel.setBackground(new Color(0, 153, 0));
         welcomePanel.add(smallWelcomePanel);
 
-        question.setFont(new java.awt.Font("Arial", Font.BOLD, 25));
+        question.setFont(new java.awt.Font("Arial", Font.ITALIC, 18));
         smallWelcomePanel.add(question);
 
-        answer.setFont(new java.awt.Font("Arial", Font.BOLD, 25));
+        answer.setFont(new java.awt.Font("Arial", Font.BOLD, 18));
         smallWelcomePanel.add(answer);
 
 
@@ -92,8 +95,21 @@ public class MainGameGUI extends JFrame{
 
         JPanel canvasCentre = makePanel(Color.pink);
         add(canvasCentre, BorderLayout.CENTER);
-//        String numOfPlayers = answer.getText();
-//        int player = Integer.parseInt(numOfPlayers);
+
+        String numOfPlayers = answer.getText();
+        int player = Integer.parseInt(numOfPlayers);
+
+        JLabel playLabel = new JLabel("The Number of players are " + numOfPlayers);
+        canvasCentre.add(playLabel);
+        STGame game = new STGame(player);
+
+        JButton passBtn = new JButton("Pass");
+        canvasSouth.add(passBtn);
+        passBtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            }
+        });
+
     }
 
     protected JPanel makePanel(Color color) {

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/PlayGamePanel.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/test7/GameGUI.java" afterPath="$PROJECT_DIR$/src/com/test7/GameGUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/MainGameGUI.java" afterPath="$PROJECT_DIR$/src/main/game/MainGameGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/PlayGamePanel.java" afterPath="$PROJECT_DIR$/src/main/game/PlayGamePanel.java" />
     </list>
     <ignored path="Java-Assignment-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,29 +28,26 @@
       <file leaf-file-name="MainGameGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/game/MainGameGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+            <state relative-caret-position="235">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#MainGameGUI#0" expanded="false" />
+                <element signature="method#MainGameGUI#0;class#MainGameGUI#0" expanded="false" />
                 <element signature="method#makePanel#0;class#MainGameGUI#0" expanded="false" />
-                <element signature="e#3229#3387#0" expanded="true" />
-                <element signature="e#3386#3387#0" expanded="true" />
+                <element signature="e#3644#3802#0" expanded="true" />
+                <element signature="e#3801#3802#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayGamePanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/game/PlayGamePanel.java">
+      <file leaf-file-name="PlayPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/test7/PlayPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="56" column="17" selection-start-line="47" selection-start-column="16" selection-end-line="56" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#makePanel#0;class#PlayGamePanel#0" expanded="false" />
-                <element signature="e#1926#2144#0" expanded="true" />
-                <element signature="e#2143#2144#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="12" column="83" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="83" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -577,9 +573,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.MainGameGUI" />
-        <item index="1" class="java.lang.String" itemvalue="Application.GameGUI" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MainGUI" />
         <item index="2" class="java.lang.String" itemvalue="Application.GameGUI" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MainGUI" />
+        <item index="3" class="java.lang.String" itemvalue="Application.GameGUI" />
         <item index="4" class="java.lang.String" itemvalue="Application.MainGUI" />
       </list>
     </recent_temporary>
@@ -679,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477188987353</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="different background colours for border layout">
+      <created>1477190084287</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1477190084287</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -762,7 +765,8 @@
     <MESSAGE value="border Layout" />
     <MESSAGE value="Main Game GUI" />
     <MESSAGE value="Play Game Panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Play Game Panel" />
+    <MESSAGE value="different background colours for border layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="different background colours for border layout" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -922,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/test7/PlayPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="22" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/game/STGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -956,38 +952,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/PlayGamePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="42" column="31" selection-start-line="36" selection-start-column="28" selection-end-line="42" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/test7/MainGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="291">
+          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
           <folding>
             <element signature="method#main#0;class#MainGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/game/PlayGamePanel.java">
+    <entry file="file://$PROJECT_DIR$/src/com/test7/PlayPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="56" column="17" selection-start-line="47" selection-start-column="16" selection-end-line="56" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#makePanel#0;class#PlayGamePanel#0" expanded="false" />
-            <element signature="e#1926#2144#0" expanded="true" />
-            <element signature="e#2143#2144#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="12" column="83" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/game/MainGameGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+        <state relative-caret-position="235">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#MainGameGUI#0" expanded="false" />
+            <element signature="method#MainGameGUI#0;class#MainGameGUI#0" expanded="false" />
             <element signature="method#makePanel#0;class#MainGameGUI#0" expanded="false" />
-            <element signature="e#3229#3387#0" expanded="true" />
-            <element signature="e#3386#3387#0" expanded="true" />
+            <element signature="e#3644#3802#0" expanded="true" />
+            <element signature="e#3801#3802#0" expanded="true" />
           </folding>
         </state>
       </provider>
