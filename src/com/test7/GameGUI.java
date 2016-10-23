@@ -62,9 +62,9 @@ public class GameGUI extends JFrame {
             canvasCentre.add(question);
             canvasCentre.add(answer);
 
-            JButton newGameBtn = new JButton("START A NEW GAME");
-            canvasSouth.add(newGameBtn);
-            newGameBtn.addActionListener(new ActionListener() {
+            JButton nextBtn = new JButton("Next");
+            canvasSouth.add(nextBtn);
+            nextBtn.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     String numOfPlayers = answer.getText();
                     int player = Integer.parseInt(numOfPlayers);

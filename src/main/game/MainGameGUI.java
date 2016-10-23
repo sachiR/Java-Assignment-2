@@ -16,6 +16,7 @@ public class MainGameGUI extends JFrame{
     JTextField answer = new JTextField(10);
     // Buttons
     JButton newGameBtn = new JButton("START A NEW GAME");
+    Container con = this.getContentPane();
 
 
     public static void main(String[] args) {
@@ -31,7 +32,6 @@ public class MainGameGUI extends JFrame{
         welcomeLbl.setFont(new java.awt.Font("Serif", Font.BOLD, 36));
 
         //container and set properties
-        Container con = this.getContentPane();
         con.setLayout(new FlowLayout());
         con.setBackground(new Color(0, 153, 0));
 
@@ -64,17 +64,47 @@ public class MainGameGUI extends JFrame{
 
         newGameBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String numOfPlayers = answer.getText();
-                int player = Integer.parseInt(numOfPlayers);
+
                 con.remove(welcomePanel);
                 con.revalidate();
                 con.repaint();
-
-                PlayGamePanel playGame = new PlayGamePanel();
-                dispose();
+                playGame();
             }
         });
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+    private void playGame() {
+        con.setLayout(new BorderLayout());
+
+        JPanel canvasSouth = makePanel(Color.RED);
+        add(canvasSouth, BorderLayout.SOUTH);
+
+        JPanel canvasNorth = makePanel(Color.BLUE);
+        add(canvasNorth, BorderLayout.NORTH);
+
+        JPanel canvasEast = makePanel(Color.YELLOW);
+        canvasEast.setBackground(Color.YELLOW);
+        add(canvasEast, BorderLayout.EAST);
+
+        JPanel canvasWest = makePanel(Color.MAGENTA);
+        add(canvasWest, BorderLayout.WEST);
+
+        JPanel canvasCentre = makePanel(Color.pink);
+        add(canvasCentre, BorderLayout.CENTER);
+//        String numOfPlayers = answer.getText();
+//        int player = Integer.parseInt(numOfPlayers);
+    }
+
+    protected JPanel makePanel(Color color) {
+        JPanel pane = new JPanel() {
+            @Override
+            public Dimension getPreferredSize() {
+                return new Dimension(100, 100);
+            }
+        };
+        pane.setBackground(color);
+        return pane;
     }
 
 }

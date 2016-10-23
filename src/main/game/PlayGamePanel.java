@@ -5,27 +5,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 
-public class PlayGamePanel extends JFrame{
-
-            private static final long serialVersionUID = 1L;
-
-            public PlayGamePanel() {
-                nonMaingame canvas = new nonMaingame();
-                setSize(1200, 730);
-                setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                setTitle("THE MINERAL SUPER TRUMP GAME");
-                add(canvas);
-                setVisible(true);
-
-            }
-
-            public class nonMaingame extends JPanel implements ActionListener {
-
-
+public class PlayGamePanel extends JPanel {
                 private static final long serialVersionUID = 1L;
                 JLabel text;
 
-                public nonMaingame() {
+                public PlayGamePanel() {
                     setLayout(new BorderLayout());
 
                     JPanel canvasSouth = makePanel(Color.RED);
@@ -43,13 +27,20 @@ public class PlayGamePanel extends JFrame{
 
                     JPanel canvasCentre = makePanel(Color.pink);
                     add(canvasCentre, BorderLayout.CENTER);
-
-
-                    JButton passBtn = new JButton("Pass");
-                    canvasSouth.add(passBtn);
-                    passBtn.addActionListener(new ActionListener() {
+                    JButton startTheGameBtn = new JButton("START A NEW GAME");
+                    canvasCentre.add(startTheGameBtn);
+                    startTheGameBtn.addActionListener(new ActionListener() {
+                        @Override
                         public void actionPerformed(ActionEvent e) {
+                            canvasCentre.remove(startTheGameBtn);
 
+                            JButton passBtn = new JButton("Pass");
+                            canvasSouth.add(passBtn);
+                            passBtn.addActionListener(new ActionListener() {
+                                public void actionPerformed(ActionEvent e) {
+
+                                }
+                            });
                         }
                     });
                 }
@@ -64,12 +55,4 @@ public class PlayGamePanel extends JFrame{
                     pane.setBackground(color);
                     return pane;
                 }
-
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    // TODO Auto-generated method stub
-
-                }
-
             }
-        }
