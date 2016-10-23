@@ -6,7 +6,7 @@ import java.util.Random;
 public class STGame {
     private int numPlayers;
     private static final int NUMBER_OF_CARDS_FOR_EACH_PLAYER = 8;
-    //private STDeck _deck;
+    private STDeck _deck;
     private ArrayList<STPlayer> players;
     private int dealerID;
     private int nextPlayerID;
@@ -14,7 +14,7 @@ public class STGame {
 
     public STGame(int numOfPlayers) {
         this.numPlayers = numOfPlayers;
-        // this._deck = new STDeck();
+        this._deck = new STDeck();
         this.players = (ArrayList<STPlayer>) InitialisePlayers();
         this.dealerID = SelectDealer();
         this.nextPlayerID = calculateNextPlayerID(this.dealerID);
@@ -60,19 +60,18 @@ public class STGame {
         return players;
     }
 
-//    public void DealCardsToEachPlayer(){
-//        int p =  calculateNextPlayerID(this.dealerID);
-//        for(int j = 0; j < this.players.size(); j++)
-//        {
-//            List<STCard> c = new ArrayList<STCard>();  // arList<STCard>();
-//            for (int i = 0; i < NUMBER_OF_CARDS_FOR_EACH_PLAYER; i++)
-//            {
-//                c.add(this._deck.getCard(i));
-//                this._deck.getCards().remove(i);     // .RemoveAt(i);
-//            }
-//            this.players.get(p).setCardsInHand(c);      // .CardsInHand = c;
-//            p = calculateNextPlayerID(p);
-//        }
-//    }
-
+    public void DealCardsToEachPlayer(){
+        int p =  calculateNextPlayerID(this.dealerID);
+        for(int j = 0; j < this.players.size(); j++)
+        {
+            List<STCard> c = new ArrayList<STCard>();  // arList<STCard>();
+            for (int i = 0; i < NUMBER_OF_CARDS_FOR_EACH_PLAYER; i++)
+            {
+                c.add(this._deck.getCard(i));
+                this._deck.getCards().remove(i);     // .RemoveAt(i);
+            }
+            this.players.get(p).setCardsInHand(c);      // .CardsInHand = c;
+            p = calculateNextPlayerID(p);
+        }
+    }
 }
