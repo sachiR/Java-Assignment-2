@@ -105,7 +105,10 @@ public class MainGameGUI extends JFrame{
         game.getNextPlayer();
         game.DealCardsToEachPlayer();
 
-        game.getPlayer(0);
+        STPlayer playerID = game.getPlayer(0);
+        PlayerView playView = new PlayerView(playerID);
+        canvasSouth.add(playView);
+
 
 //        JLabel randomDealerLabel = new JLabel("The Dealer ID is " + game.getDealerID());
 //        canvasCentre.add(randomDealerLabel);
