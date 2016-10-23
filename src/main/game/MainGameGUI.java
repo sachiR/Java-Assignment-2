@@ -12,8 +12,9 @@ public class MainGameGUI extends JFrame{
 
     //Labels
     JLabel welcomeLbl = new JLabel("WELCOME TO THE MINERAL SUPER TRUMP GAME");
-    JLabel question = new JLabel("Please enter the number of players you like to play with?");
+    JLabel question = new JLabel("Please enter the number of players");
     JTextField answer = new JTextField(10);
+
     // Buttons
     JButton newGameBtn = new JButton("START A NEW GAME");
     Container con = this.getContentPane();
@@ -69,7 +70,7 @@ public class MainGameGUI extends JFrame{
                 con.remove(welcomePanel);
                 con.revalidate();
                 con.repaint();
-                playGame();
+
             }
         });
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -120,8 +121,6 @@ public class MainGameGUI extends JFrame{
             }
         });
     }
-
-
 
     protected JPanel makePanel(Color color) {
         JPanel pane = new JPanel() {

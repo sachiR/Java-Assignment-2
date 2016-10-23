@@ -7,8 +7,8 @@ public class CardView extends JPanel{
 
     public CardView(STCard card) {
         this.card  = card;
-        JLabel cardName= new JLabel(String.valueOf(card));
+        JLabel cardID= new JLabel("1");
 
-        add(cardName);
+        add(cardID);
     }
 }

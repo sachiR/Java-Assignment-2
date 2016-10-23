@@ -24,7 +24,6 @@ public class PlayerView extends JPanel{
             CardView cardView = new CardView(card);
             cardView.setBackground(new Color(0, 153, 0));
             add(cardView);
-
         }
 
     }

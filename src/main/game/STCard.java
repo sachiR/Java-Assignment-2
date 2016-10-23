@@ -211,8 +211,10 @@ public class STCard {
     public void setFileName(String fileName){this._fileName = fileName;}
     public String getFileName(){return this._fileName;}
 
-    public void setImageName(String imageName){this._imageName = imageName;}
-    public String getImageName(){return this._imageName;}
+    public void setImageName(String imageName){
+        this._imageName = imageName;}
+    public String getImageName(){
+        return this._imageName;}
 
 
     //--------------This is only for Trump Cards--------------

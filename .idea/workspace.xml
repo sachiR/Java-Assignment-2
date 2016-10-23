@@ -2,16 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/Resources/MstCards_151021.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Resources/MstCards_151021.xml" afterPath="$PROJECT_DIR$/src/main/game/MstCards_151021.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/main.java" afterPath="$PROJECT_DIR$/src/game/MainGUI.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/MainGUI.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide01.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide01.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide02.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide02.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide03.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide03.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide04.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide04.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide05.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide05.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide06.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide06.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide07.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide07.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide08.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide08.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide09.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide09.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide10.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide10.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide11.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide11.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide12.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide12.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide13.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide13.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide14.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide14.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide15.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide15.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide16.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide16.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide17.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide17.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide18.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide18.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide19.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide19.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide20.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide20.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide21.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide21.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide22.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide22.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide23.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide23.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide24.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide24.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide25.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide25.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide26.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide26.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide27.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide27.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide28.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide28.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide29.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide29.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide30.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide30.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide31.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide31.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide32.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide32.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide33.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide33.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide34.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide34.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide35.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide35.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide36.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide36.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide37.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide37.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide38.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide38.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide39.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide39.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide40.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide40.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide41.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide41.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide42.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide42.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide43.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide43.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide44.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide44.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide45.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide45.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide46.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide46.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide47.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide47.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide48.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide48.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide49.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide49.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide50.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide50.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide51.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide51.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide52.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide52.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide53.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide53.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide54.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide54.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide55.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide55.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide56.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide56.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide57.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide57.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide58.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide58.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide59.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide59.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide60.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide60.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide61.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide61.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide62.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide62.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide63.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide63.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide64.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide64.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide65.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide65.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dim/game/images/Slide66.jpg" afterPath="$PROJECT_DIR$/src/main/game/images/Slide66.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dim/game/Cards.java" afterPath="$PROJECT_DIR$/src/dim/game/Cards.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/CardView.java" afterPath="$PROJECT_DIR$/src/main/game/CardView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/MainGameGUI.java" afterPath="$PROJECT_DIR$/src/main/game/MainGameGUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/PlayerView.java" afterPath="$PROJECT_DIR$/src/main/game/PlayerView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/STDeck.java" afterPath="$PROJECT_DIR$/src/main/game/STDeck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/STGame.java" afterPath="$PROJECT_DIR$/src/main/game/STGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/STPlayer.java" afterPath="$PROJECT_DIR$/src/main/game/STPlayer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/game/STCard.java" afterPath="$PROJECT_DIR$/src/main/game/STCard.java" />
     </list>
     <ignored path="Java-Assignment-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +94,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainGameGUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainGameGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/game/MainGameGUI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,86 +106,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/game/STGame.java">
+      <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dim/game/A1/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <element signature="method#STGame#0;class#STGame#0" expanded="false" />
-                <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
-                <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
-                <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
-                <element signature="method#dealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
-                <element signature="method#drawCardFromDeck#0;class#STGame#0" expanded="false" />
+                <element signature="e#180#181#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STPlayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/game/STPlayer.java">
+      <file leaf-file-name="TrumpCard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dim/game/A1/TrumpCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
               <folding>
-                <element signature="method#STPlayer#1;class#STPlayer#0" expanded="false" />
+                <element signature="e#280#281#0" expanded="true" />
+                <element signature="e#314#315#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STDeck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/game/STDeck.java">
+      <file leaf-file-name="STCard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding>
-                <element signature="method#STDeck#0;class#STDeck#0" expanded="false" />
-                <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
-                <element signature="method#ReadXML#0;class#STDeck#0" expanded="false" />
-                <element signature="method#getcardDetails#0;class#STDeck#0" expanded="false" />
-                <element signature="method#AddToDeck#0;class#STDeck#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/game/CardView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="85">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/game/PlayerView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="STCard.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/game/STCard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2997">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding>
-                <element signature="class#enumCategory#0;class#STCard#0" expanded="false" />
-                <element signature="class#enumCardType#0;class#STCard#0" expanded="false" />
-                <element signature="class#367:905" expanded="false" />
-                <element signature="class#971:1192" expanded="false" />
-                <element signature="class#1255:1476" expanded="false" />
-                <element signature="class#1533:1947" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -148,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/test5/JWelcomeFrame.java" />
         <option value="$PROJECT_DIR$/src/main/game/JHowToPlayFrame.java" />
         <option value="$PROJECT_DIR$/src/main/game/JWelcomeFrame.java" />
         <option value="$PROJECT_DIR$/src/main/game/Game.java" />
@@ -176,9 +188,7 @@
         <option value="$PROJECT_DIR$/src/com/test7/MainGUI.java" />
         <option value="$PROJECT_DIR$/src/com/test7/GameGUI.java" />
         <option value="$PROJECT_DIR$/src/main/game/PlayGamePanel.java" />
-        <option value="$PROJECT_DIR$/src/main/game/STCard.java" />
         <option value="$PROJECT_DIR$/src/com/test7/STDeck.java" />
-        <option value="$PROJECT_DIR$/src/main/game/CardView.java" />
         <option value="$PROJECT_DIR$/src/dim.java" />
         <option value="$PROJECT_DIR$/src/dim/game/Cards.java" />
         <option value="$PROJECT_DIR$/src/game/main.java" />
@@ -197,8 +207,11 @@
         <option value="$PROJECT_DIR$/src/main/game/STPlayer.java" />
         <option value="$PROJECT_DIR$/src/main/game/STDeck.java" />
         <option value="$PROJECT_DIR$/src/main/game/STGame.java" />
-        <option value="$PROJECT_DIR$/src/main/game/MainGameGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/game/STCard.java" />
+        <option value="$PROJECT_DIR$/src/main/game/CardView.java" />
         <option value="$PROJECT_DIR$/src/main/game/PlayerView.java" />
+        <option value="$PROJECT_DIR$/src/game/MainGameGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/game/MainGameGUI.java" />
       </list>
     </option>
   </component>
@@ -233,6 +246,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,9 +299,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,6 +315,9 @@
       <recent name="C:\Users\Sachini\Documents\GitHub\Java-Assignment-2\src\com" />
       <recent name="C:\Users\Sachini\Documents\GitHub\Java-Assignment-2\src\Resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main.game" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="main.game" />
     </key>
@@ -315,26 +331,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="main.game.MainGameGUI" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java-Assignment-2" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -395,6 +391,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="dim.game.A1.demo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Java-Assignment-2" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainGameGUI (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="game.MainGameGUI" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -637,18 +653,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.MainGameGUI" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Main (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Cards" />
-      <item index="4" class="java.lang.String" itemvalue="Application.demo" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Cards" />
+      <item index="3" class="java.lang.String" itemvalue="Application.demo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MainGameGUI (1)" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.MainGameGUI" />
-        <item index="1" class="java.lang.String" itemvalue="Application.demo" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Cards" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MainGameGUI (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.demo" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Cards" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -803,7 +819,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477208045190</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fixed player View">
+      <created>1477212227746</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1477212227746</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -823,6 +846,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -833,7 +857,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -894,7 +917,8 @@
     <MESSAGE value="CardView and PlayerView" />
     <MESSAGE value="dEMO" />
     <MESSAGE value="dEMO 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="dEMO 2" />
+    <MESSAGE value="fixed player View" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed player View" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -907,8 +931,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/test1/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/test5/JWelcomeFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/com/test4/Main.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/javax/swing/JLabel.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -975,7 +997,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dim/game/images/Slide14.jpg">
+    <entry file="file://$PROJECT_DIR$/src/main/game/images/Slide14.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -999,18 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#86#87#0" expanded="false" />
-            <element signature="e#114#115#0" expanded="false" />
-            <element signature="e#180#181#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dim/game/A1/deck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1029,16 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4401">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -1053,13 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/TrumpCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1071,18 +1064,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/MainGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="34" column="11" selection-start-line="32" selection-start-column="10" selection-end-line="34" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/MstCards_151021.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/javax/swing/ImageIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="237" column="11" selection-start-line="237" selection-start-column="11" selection-end-line="237" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/STDeck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="method#STDeck#0;class#STDeck#0" expanded="false" />
+            <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
+            <element signature="method#ReadXML#0;class#STDeck#0" expanded="false" />
+            <element signature="method#getcardDetails#0;class#STDeck#0" expanded="false" />
+            <element signature="method#AddToDeck#0;class#STDeck#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/STCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2924">
+          <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+          <folding>
+            <element signature="class#enumCardType#0;class#STCard#0" expanded="false" />
+            <element signature="class#367:905" expanded="false" />
+            <element signature="class#971:1192" expanded="false" />
+            <element signature="class#1255:1476" expanded="false" />
+            <element signature="class#1533:1947" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/CardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/STPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="method#STPlayer#1;class#STPlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/game/PlayerView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,26 +1159,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/game/STPlayer.java">
+    <entry file="file://$PROJECT_DIR$/src/game/MainGameGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="-525">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/TrumpCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <element signature="method#STPlayer#1;class#STPlayer#0" expanded="false" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/game/STDeck.java">
+    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/STCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dim/game/A1/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="method#STDeck#0;class#STDeck#0" expanded="false" />
-            <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
-            <element signature="method#ReadXML#0;class#STDeck#0" expanded="false" />
-            <element signature="method#getcardDetails#0;class#STDeck#0" expanded="false" />
-            <element signature="method#AddToDeck#0;class#STDeck#0" expanded="false" />
+            <element signature="e#180#181#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1128,42 +1199,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/game/MainGameGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/game/PlayerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/game/CardView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/game/STCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2997">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="class#enumCategory#0;class#STCard#0" expanded="false" />
-            <element signature="class#enumCardType#0;class#STCard#0" expanded="false" />
-            <element signature="class#367:905" expanded="false" />
-            <element signature="class#971:1192" expanded="false" />
-            <element signature="class#1255:1476" expanded="false" />
-            <element signature="class#1533:1947" expanded="false" />
           </folding>
         </state>
       </provider>
