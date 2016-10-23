@@ -1,4 +1,4 @@
-package main.game;
+package com.test7;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

@@ -1,4 +1,4 @@
-package main.game;
+package com.test7;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package main.game;
+package com.test7;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,6 +16,7 @@ public class PlayPanel extends JPanel{
         add(dealerLabel);
         JLabel nextPlayer = new JLabel("The next player is " + game.getNextPlayer());
         add(nextPlayer);
+        game.DealCardsToEachPlayer();
 
     }
 }
