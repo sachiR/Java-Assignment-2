@@ -146,7 +146,7 @@ public class MainGUI extends JFrame {
 
     }
 
-    private void CreateGameInfoPanel(){
+    private void CreateGameInfoPanel() {
         panGameInfo.setBackground(mainColor);
         panGameInfo.setLayout(new BoxLayout(panGameInfo, BoxLayout.LINE_AXIS));
         panGameInfo.setBorder(BorderFactory.createTitledBorder("CURRENT GAME INFORMATION"));
@@ -160,9 +160,27 @@ public class MainGUI extends JFrame {
         panGameInfo.add(btnLastPlayCard);
 
         panPlayersCards.add(panGameInfo);
-        int size = panPlayersCards.size()-1;
+        int size = panPlayersCards.size() - 1;
         panCards.add(panPlayersCards.get(size));
 
+        JButton btnPassGame = new JButton("Pass");
+        panCards.add(btnPassGame);
+        btnPassGame.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                STCard card = game.drawCardFromDeck(0);
+                if (card != null) {
+                    PrintPlayersCardsInHand(0, panPlayersCards.get(0));
+                } else {
+                    int result = JOptionPane.showConfirmDialog(null, "Sorry No More Cards Available In The Deck \n Would You Like To Play A New Game", "No More Cards", JOptionPane.YES_NO_OPTION);
+                    if (result == JOptionPane.YES_OPTION) {
+                        removeAll();
+                        new MainGUI();
+                    }
+                }
+            }
+        });
     }
 
     private void AddPlayers(){
@@ -241,10 +259,6 @@ public class MainGUI extends JFrame {
 
         //=== Remove Card from Player ===
         game.getPlayer(playerid).getCardsInHand().remove(index);
-
-        //panPlayersCards.get(panPlayersCards.size()-1).add(btnLastPlayCard);
-
-        JOptionPane.showMessageDialog(null, "You clicked on Card ID " + cardid , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
     }
 
     private int GetIndexByCardID(int playerID, int cardID){
