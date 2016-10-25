@@ -117,37 +117,41 @@ public class MainGUI extends JFrame {
         game.getDeck().ShuffleTheDeck();
 
         game.DealCardsToEachPlayer();
-
+        panCards.setBackground(mainColor);
 
         panCards.setLayout(new BoxLayout(panCards, BoxLayout.Y_AXIS));
-        CreateCardPanelForEachPlayer();
         CreatePlayGamePanel();
-
+        CreateCardPanelForEachPlayer();
         this.add(panCards);
+
     }
+
     private void CreateCardPanelForEachPlayer(){
         panelPlayerNames.setVisible(false);
 
         JPanel panTemp;
+
 
         //panCards.setLayout(new BoxLayout(panCards, BoxLayout.Y_AXIS));
 
         for(int j=0; j < game.getPlayers().size(); j++ ){
 
             panTemp = new JPanel();
+            panTemp.setBackground(mainColor);
             panTemp.setLayout(new BoxLayout(panTemp, BoxLayout.X_AXIS));
             panTemp.setBorder(BorderFactory.createTitledBorder(game.getPlayer(j).getPlayerName()));
 
             PrintPlayersCardsInHand(j, panTemp);
-
             panPlayersCards.add(panTemp);
             panCards.add(panPlayersCards.get(j));
+
         }
 
     }
 
     private void CreatePlayGamePanel(){
         JPanel panTemp = new JPanel();
+        panTemp.setBackground(mainColor);
         panTemp.setLayout(new BoxLayout(panTemp, BoxLayout.LINE_AXIS));
         panTemp.setBorder(BorderFactory.createTitledBorder("CURRENT GAME INFORMATION"));
 
@@ -170,6 +174,7 @@ public class MainGUI extends JFrame {
             players.add(new STPlayer(i+1,txtPlayerNames.get(i).getText()));
         }
     }
+
     private void PrintPlayers() {
         for(int i = 0; i < Integer.parseInt(txtNumOfPlayers.getText()); i++){
             System.out.println(" Player   ID : " + players.get(i).getPlayerID());
@@ -177,6 +182,7 @@ public class MainGUI extends JFrame {
         }
         System.out.println();
     }
+
     private void PrintPlayersCardsInHand(int playerID, JPanel pan) {
         JButton btnTemp;
         for(int i = 0; i < game.getPlayer(playerID).getCardsInHand().size(); i++){
