@@ -13,6 +13,8 @@ public class MainGUI extends JFrame {
     JTextField txtNumOfPlayers = new JTextField(10);
     JPanel panelPlayerNames = new JPanel();
     JPanel panCards = new JPanel(new BorderLayout());
+    JPanel panGameInfo = new JPanel();
+
     ArrayList<JPanel> panPlayersCards = new ArrayList<>();
     ArrayList<JButton> btnPlayersCards = new ArrayList<>();
     ArrayList<STPlayer> players = new ArrayList<>();
@@ -24,16 +26,17 @@ public class MainGUI extends JFrame {
     JLabel lblTrumpValue = new JLabel();
     JButton btnLastPlayCard = new JButton();
     STGame game;
+    STPlayer player;
 
     Color mainColor = new Color(0, 153, 0);
     Font mainFont = new Font("Arial", Font.ITALIC, 22);
 
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         new MainGUI();
     }
 
-    public MainGUI(){
+    public MainGUI() {
         super("The Mineral Super Trump Card Game");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -45,7 +48,7 @@ public class MainGUI extends JFrame {
         setVisible(true);
     }
 
-    public void setPanelNumberOfPlayers(){
+    public void setPanelNumberOfPlayers() {
         panelNumberOfPlayers.setLayout(new FlowLayout());
         panelNumberOfPlayers.setBackground(mainColor);
 
@@ -82,16 +85,16 @@ public class MainGUI extends JFrame {
         JPanel smallPlayerName = new JPanel();
         smallPlayerName.setBackground(mainColor);
         panelPlayerNames.add(smallPlayerName);
-        for(int i = 1; i < Integer.parseInt(txtNumOfPlayers.getText()) ; i++){
-            smallPlayerName.setLayout(new GridLayout((i+4),1));
-            JLabel playerQuestion=new JLabel("Enter Player " + i + " Name:  ");
+        for (int i = 1; i < Integer.parseInt(txtNumOfPlayers.getText()); i++) {
+            smallPlayerName.setLayout(new GridLayout((i + 4), 1));
+            JLabel playerQuestion = new JLabel("Enter Player " + i + " Name:  ");
             smallPlayerName.add(playerQuestion);
             playerQuestion.setFont(mainFont);
 
             JTextField playerAnswer = new JTextField(30);
             playerAnswer.setFont(mainFont);
             txtPlayerNames.add(playerAnswer);
-            smallPlayerName.add(txtPlayerNames.get(i-1));
+            smallPlayerName.add(txtPlayerNames.get(i - 1));
         }
 
         JButton btnStart = new JButton("Start The Game");
@@ -118,23 +121,22 @@ public class MainGUI extends JFrame {
 
         game.DealCardsToEachPlayer();
         panCards.setBackground(mainColor);
-
         panCards.setLayout(new BoxLayout(panCards, BoxLayout.Y_AXIS));
+
         CreatePlayGamePanel();
         CreateCardPanelForEachPlayer();
-        this.add(panCards);
 
+        this.add(panCards);
     }
 
-    private void CreateCardPanelForEachPlayer(){
+    private void CreateCardPanelForEachPlayer() {
         panelPlayerNames.setVisible(false);
 
         JPanel panTemp;
 
-
         //panCards.setLayout(new BoxLayout(panCards, BoxLayout.Y_AXIS));
 
-        for(int j=0; j < game.getPlayers().size(); j++ ){
+        for (int j = 0; j < game.getPlayers().size(); j++) {
 
             panTemp = new JPanel();
             panTemp.setBackground(mainColor);
@@ -142,14 +144,14 @@ public class MainGUI extends JFrame {
             panTemp.setBorder(BorderFactory.createTitledBorder(game.getPlayer(j).getPlayerName()));
 
             PrintPlayersCardsInHand(j, panTemp);
+
             panPlayersCards.add(panTemp);
             panCards.add(panPlayersCards.get(j));
-
         }
 
     }
 
-    private void CreatePlayGamePanel(){
+    private void CreatePlayGamePanel() {
         JPanel panTemp = new JPanel();
         panTemp.setBackground(mainColor);
         panTemp.setLayout(new BoxLayout(panTemp, BoxLayout.LINE_AXIS));
@@ -162,7 +164,7 @@ public class MainGUI extends JFrame {
         panTemp.add(lblNextPlayerName);
 
         panPlayersCards.add(panTemp);
-        int size = panPlayersCards.size()-1;
+        int size = panPlayersCards.size() - 1;
         panCards.add(panPlayersCards.get(size));
 
     }
@@ -174,7 +176,6 @@ public class MainGUI extends JFrame {
             players.add(new STPlayer(i+1,txtPlayerNames.get(i).getText()));
         }
     }
-
     private void PrintPlayers() {
         for(int i = 0; i < Integer.parseInt(txtNumOfPlayers.getText()); i++){
             System.out.println(" Player   ID : " + players.get(i).getPlayerID());
@@ -182,7 +183,6 @@ public class MainGUI extends JFrame {
         }
         System.out.println();
     }
-
     private void PrintPlayersCardsInHand(int playerID, JPanel pan) {
         JButton btnTemp;
         for(int i = 0; i < game.getPlayer(playerID).getCardsInHand().size(); i++){
@@ -193,14 +193,16 @@ public class MainGUI extends JFrame {
 
     private JButton createButton(int playerID, int cardID) {
         JButton button = new JButton();
-        //JButton button = new JButton(new ImageIcon(((new ImageIcon("images\\" + game.getPlayer(playerID).getCardsInHand().get(cardID).getImageName() + ".jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
         if(playerID == 0) {
-            button.setIcon(new ImageIcon(((new ImageIcon("images\\" + game.getPlayer(playerID).getCardsInHand().get(cardID).getImageName() + ".jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
+            button.setIcon(game.getPlayer(playerID).getCardsInHand().get(cardID).getCardBottomImage());
+            //button.setIcon(new ImageIcon(((new ImageIcon("images\\" + game.getPlayer(playerID).getCardsInHand().get(cardID).getImageName() + ".jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
         } else {
-            button.setIcon(new ImageIcon(((new ImageIcon("images\\Slide66.jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
+            button.setIcon(game.getPlayer(playerID).getCardsInHand().get(cardID).getCardTopImage());
+            //button.setIcon(new ImageIcon(((new ImageIcon("images\\Slide66.jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
         }
 
         button.setName(String.valueOf(game.getPlayer(playerID).getCardsInHand().get(cardID).getCardID()));
+        button.putClientProperty("playerID", Integer.valueOf(playerID));
 
         button.setFocusable(false);
         button.addActionListener(new ActionListener() {
@@ -214,11 +216,43 @@ public class MainGUI extends JFrame {
 
     private void btnClick(ActionEvent e){
 
-        /*
-        btnLastPlayCard = btnPlayersCards.get(Integer.parseInt(((JComponent) e.getSource()).getName()));
-        panPlayersCards.get(panPlayersCards.size()-1).add(btnLastPlayCard);
-        */
+        panGameInfo.remove(btnLastPlayCard);
+        btnLastPlayCard = (JButton)e.getSource();
 
-        JOptionPane.showMessageDialog(null, "You clicked on Card ID " + ((JComponent) e.getSource()).getName() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+        int playerid = -1;
+        Object property = btnLastPlayCard.getClientProperty("playerID");
+        if (property instanceof Integer) {
+            playerid = ((Integer)property);
+            // do stuff
+        }
+
+        int cardid = Integer.parseInt(btnLastPlayCard.getName());
+        //int playerid = Integer.parseInt(btnLastPlayCard.getText());
+
+        int index = GetIndexByCardID(playerid, cardid);
+
+        ImageIcon img = game.getPlayer(playerid).getCardsInHand().get(index).getCardBottomImage();
+
+        btnLastPlayCard.setIcon(img);
+
+        panGameInfo.add(btnLastPlayCard);
+
+        panPlayersCards.get(playerid).remove(btnLastPlayCard);
+        panPlayersCards.get(playerid).revalidate();
+        panPlayersCards.get(playerid).repaint();
+
+        //=== Remove Card from Player ===
+        game.getPlayer(playerid).getCardsInHand().remove(index);
+
+        //panPlayersCards.get(panPlayersCards.size()-1).add(btnLastPlayCard);
+
+        JOptionPane.showMessageDialog(null, "You clicked on Card ID " + cardid , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    private int GetIndexByCardID(int playerID, int cardID){
+        for(int i = 0; i<game.getPlayer(playerID).getCardsInHand().size(); i++){
+            if(game.getPlayer(playerID).getCardsInHand().get(i).getCardID() == cardID ){return i;}
+        }
+        return -1;
     }
 }
