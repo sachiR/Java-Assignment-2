@@ -145,13 +145,14 @@ public class MainGUI extends JFrame {
         }
 
     }
+
     private void CreatePlayGamePanel(){
         JPanel panTemp = new JPanel();
         panTemp.setLayout(new BoxLayout(panTemp, BoxLayout.LINE_AXIS));
         panTemp.setBorder(BorderFactory.createTitledBorder("CURRENT GAME INFORMATION"));
 
         lblDealerName.setText(" DEALER : " + game.getPlayer(game.getDealerID()).getPlayerName());
-        lblNextPlayerName.setText("Next Player : " + game.getPlayer(game.getNextPlayer()).getPlayerName());
+        lblNextPlayerName.setText(" Next Player : " + game.getPlayer(game.getNextPlayer()).getPlayerName());
 
         panTemp.add(lblDealerName);
         panTemp.add(lblNextPlayerName);
