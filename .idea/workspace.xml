@@ -2,7 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/main/test.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainGUI.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dim/game/A1/Card.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dim/game/A1/Demo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dim/game/A1/STCard.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dim/game/A1/STDeck.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dim/game/A1/STGame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dim/game/A1/STPlayer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dim/game/A1/TrumpCard.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dim/game/A1/deck.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dim/game/A1/test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dim/game/Cards.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/CardView.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/MainGameGUI.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/MstCards_151021.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/PlayerView.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/STCard.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/STDeck.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/STGame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/STPlayer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide34.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide37.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide38.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide39.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide41.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide42.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide43.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide45.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide46.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide47.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide48.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide49.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide51.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide52.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide53.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide54.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide56.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide57.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide58.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide59.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide61.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide62.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide63.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide64.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide65.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/game/images/Slide66.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Java-Assignment-2.iws" />
@@ -25,19 +109,17 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MainGUI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/main/MainGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="66" column="66" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
+            <state relative-caret-position="153">
+              <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
               <folding>
-                <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
-                <element signature="class#805:1042" expanded="false" />
-                <element signature="method#actionPerformed#0;class#805:1042" expanded="false" />
-                <element signature="method#numOfPlayer#0;class#MainGUI#0" expanded="false" />
-                <element signature="method#nameOfPlayer#0;class#MainGUI#0" expanded="false" />
-                <element signature="e#2827#2835#0" expanded="true" />
-                <element signature="method#actionPerformed#0;class#3546:3789" expanded="false" />
-                <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+                <element signature="e#1684#1685#0" expanded="true" />
+                <element signature="e#1737#1738#0" expanded="true" />
+                <element signature="e#4203#4238#0" expanded="false" />
+                <marker date="1477359498630" expanded="false" signature="805:1086" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -63,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/game/STPlayers.java" />
         <option value="$PROJECT_DIR$/src/Resources/STDeck.java" />
         <option value="$PROJECT_DIR$/src/main/game/PlayFrame.java" />
         <option value="$PROJECT_DIR$/src/com/test1/Main.java" />
@@ -114,6 +195,7 @@
         <option value="$PROJECT_DIR$/src/game/main/Test.java" />
         <option value="$PROJECT_DIR$/src/game/main/test.java" />
         <option value="$PROJECT_DIR$/src/game/main/MainGUI.java" />
+        <option value="$PROJECT_DIR$/src/MainGUI.java" />
       </list>
     </option>
   </component>
@@ -149,15 +231,15 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Subjects/CP2406/swing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -688,7 +770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477270920134</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Player names return">
+      <created>1477276033243</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1477276033243</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -702,7 +791,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921136" sideWeight="0.50292826" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30283913" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30283913" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -782,7 +871,8 @@
     <MESSAGE value="fixed player View" />
     <MESSAGE value="game.main" />
     <MESSAGE value="get player name" />
-    <option name="LAST_COMMIT_MESSAGE" value="get player name" />
+    <MESSAGE value="Player names return" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player names return" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -897,10 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-          <folding>
-            <element signature="method#STPlayer#0;class#STPlayer#0" expanded="false" />
-            <element signature="method#setCards#0;class#STPlayer#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -936,13 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2924">
           <caret line="216" column="8" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
-          <folding>
-            <element signature="class#enumCardType#0;class#STCard#0" expanded="false" />
-            <element signature="class#367:905" expanded="false" />
-            <element signature="class#971:1192" expanded="false" />
-            <element signature="class#1255:1476" expanded="false" />
-            <element signature="class#1533:1947" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -964,9 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,14 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="method#STGame#0;class#STGame#0" expanded="false" />
-            <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
-            <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
-            <element signature="method#InitialisePlayers#0;class#STGame#0" expanded="false" />
-            <element signature="method#dealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
-            <element signature="method#drawCardFromDeck#0;class#STGame#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -990,9 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,9 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#180#181#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,10 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#280#281#0" expanded="false" />
-            <element signature="e#314#315#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,31 +1079,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/main/test.java">
+    <entry file="file://$PROJECT_DIR$/src/game/main/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/main/MainGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="66" column="66" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
+        <state relative-caret-position="153">
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
           <folding>
-            <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
-            <element signature="class#805:1042" expanded="false" />
-            <element signature="method#actionPerformed#0;class#805:1042" expanded="false" />
-            <element signature="method#numOfPlayer#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#nameOfPlayer#0;class#MainGUI#0" expanded="false" />
-            <element signature="e#2827#2835#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#3546:3789" expanded="false" />
-            <element signature="method#main#0;class#MainGUI#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+            <element signature="e#1684#1685#0" expanded="true" />
+            <element signature="e#1737#1738#0" expanded="true" />
+            <element signature="e#4203#4238#0" expanded="false" />
+            <marker date="1477359498630" expanded="false" signature="805:1086" ph="{...}" />
           </folding>
         </state>
       </provider>
