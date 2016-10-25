@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class MainGUI extends JFrame {
+    private static final int CARD_WIDTH = 60;
+    private static final int CARD_HEIGHT = 90;
 
     JPanel panWelcome = new JPanel();
     JPanel panelNumberOfPlayers = new JPanel();
@@ -16,6 +18,11 @@ public class MainGUI extends JFrame {
     ArrayList<STPlayer> players = new ArrayList<>();
     ArrayList<JTextField> txtPlayerNames = new ArrayList<>();
 
+    JLabel lblDealerName = new JLabel();
+    JLabel lblNextPlayerName = new JLabel();
+    JLabel lblTrumpCategory = new JLabel();
+    JLabel lblTrumpValue = new JLabel();
+    JButton btnLastPlayCard = new JButton();
     STGame game;
 
     Color mainColor = new Color(0, 153, 0);
@@ -77,7 +84,7 @@ public class MainGUI extends JFrame {
         panelPlayerNames.add(smallPlayerName);
         for(int i = 1; i < Integer.parseInt(txtNumOfPlayers.getText()) ; i++){
             smallPlayerName.setLayout(new GridLayout((i+4),1));
-            JLabel playerQuestion=new JLabel("Enter Player " + (i+1) + " Name:  ");
+            JLabel playerQuestion=new JLabel("Enter Player " + i + " Name:  ");
             smallPlayerName.add(playerQuestion);
             playerQuestion.setFont(mainFont);
 
@@ -111,17 +118,19 @@ public class MainGUI extends JFrame {
 
         game.DealCardsToEachPlayer();
 
-        //-----------------------------------------
-        //------Set Panel for Each Player-----
-
-        panelPlayerNames.setVisible(false);
-        //panCards.setLayout(new BoxLayout(panCards, BoxLayout.Y_AXIS));
-        //panCards.setVisible(true);
-
-        JPanel panTemp;
-        JLabel lblTemp;
 
         panCards.setLayout(new BoxLayout(panCards, BoxLayout.Y_AXIS));
+        CreateCardPanelForEachPlayer();
+        CreatePlayGamePanel();
+
+        this.add(panCards);
+    }
+    private void CreateCardPanelForEachPlayer(){
+        panelPlayerNames.setVisible(false);
+
+        JPanel panTemp;
+
+        //panCards.setLayout(new BoxLayout(panCards, BoxLayout.Y_AXIS));
 
         for(int j=0; j < game.getPlayers().size(); j++ ){
 
@@ -130,11 +139,27 @@ public class MainGUI extends JFrame {
             panTemp.setBorder(BorderFactory.createTitledBorder(game.getPlayer(j).getPlayerName()));
 
             PrintPlayersCardsInHand(j, panTemp);
+
             panPlayersCards.add(panTemp);
             panCards.add(panPlayersCards.get(j));
         }
 
-        this.add(panCards);
+    }
+    private void CreatePlayGamePanel(){
+        JPanel panTemp = new JPanel();
+        panTemp.setLayout(new BoxLayout(panTemp, BoxLayout.LINE_AXIS));
+        panTemp.setBorder(BorderFactory.createTitledBorder("CURRENT GAME INFORMATION"));
+
+        lblDealerName.setText(" DEALER : " + game.getPlayer(game.getDealerID()).getPlayerName());
+        lblNextPlayerName.setText("Next Player : " + game.getPlayer(game.getNextPlayer()).getPlayerName());
+
+        panTemp.add(lblDealerName);
+        panTemp.add(lblNextPlayerName);
+
+        panPlayersCards.add(panTemp);
+        int size = panPlayersCards.size()-1;
+        panCards.add(panPlayersCards.get(size));
+
     }
 
     private void AddPlayers(){
@@ -144,13 +169,49 @@ public class MainGUI extends JFrame {
             players.add(new STPlayer(i+1,txtPlayerNames.get(i).getText()));
         }
     }
-
+    private void PrintPlayers() {
+        for(int i = 0; i < Integer.parseInt(txtNumOfPlayers.getText()); i++){
+            System.out.println(" Player   ID : " + players.get(i).getPlayerID());
+            System.out.println(" Player Name : " + players.get(i).getPlayerName());
+        }
+        System.out.println();
+    }
     private void PrintPlayersCardsInHand(int playerID, JPanel pan) {
         JButton btnTemp;
         for(int i = 0; i < game.getPlayer(playerID).getCardsInHand().size(); i++){
-            btnTemp = new JButton(new ImageIcon(((new ImageIcon("images\\" + game.getPlayer(playerID).getCardsInHand().get(i).getImageName() + ".jpg")).getImage()).getScaledInstance(100, 150, java.awt.Image.SCALE_SMOOTH)));
+            btnTemp = createButton(playerID, i);
             pan.add(btnTemp);
         }
     }
 
+    private JButton createButton(int playerID, int cardID) {
+        JButton button = new JButton();
+        //JButton button = new JButton(new ImageIcon(((new ImageIcon("images\\" + game.getPlayer(playerID).getCardsInHand().get(cardID).getImageName() + ".jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
+        if(playerID == 0) {
+            button.setIcon(new ImageIcon(((new ImageIcon("images\\" + game.getPlayer(playerID).getCardsInHand().get(cardID).getImageName() + ".jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
+        } else {
+            button.setIcon(new ImageIcon(((new ImageIcon("images\\Slide66.jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
+        }
+
+        button.setName(String.valueOf(game.getPlayer(playerID).getCardsInHand().get(cardID).getCardID()));
+
+        button.setFocusable(false);
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                btnClick(e);
+            }
+        });
+        return button;
+    }
+
+    private void btnClick(ActionEvent e){
+
+        /*
+        btnLastPlayCard = btnPlayersCards.get(Integer.parseInt(((JComponent) e.getSource()).getName()));
+        panPlayersCards.get(panPlayersCards.size()-1).add(btnLastPlayCard);
+        */
+
+        JOptionPane.showMessageDialog(null, "You clicked on Card ID " + ((JComponent) e.getSource()).getName() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+    }
 }
