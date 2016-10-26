@@ -11,6 +11,22 @@ public class MainGUI extends JFrame {
     JPanel panelPlayerNames = new JPanel();
     JPanel panCards = new JPanel(new BorderLayout());
     JPanel panGameInfo = new JPanel();
+    Container con = getContentPane();
+    JPanel north = new JPanel();
+    JPanel centre = new JPanel();
+    JPanel east = new JPanel();
+    JPanel west = new JPanel();
+    JPanel south = new JPanel();
+
+    JPanel panel1= new JPanel();
+    JPanel panel2= new JPanel();
+    JPanel panel3= new JPanel();
+    JPanel panel4= new JPanel();
+    JPanel panel5= new JPanel();
+    JPanel panel6= new JPanel();
+    JPanel panel7= new JPanel();
+    JPanel panel8= new JPanel();
+    JPanel panel9 = new JPanel();
 
     ArrayList<JPanel> panPlayersCards = new ArrayList<>();
     ArrayList<STPlayer> players = new ArrayList<>();
@@ -112,38 +128,95 @@ public class MainGUI extends JFrame {
     private void NewGame() {
         game = new STGame();
         game.setPlayers(this.players);
-
         game.getDeck().ShuffleTheDeck();
-
         game.DealCardsToEachPlayer();
-        panCards.setBackground(mainColor);
 
-        panCards.setLayout(new BoxLayout(panCards, BoxLayout.Y_AXIS));
+        north.setBackground(mainColor);
+        north.setPreferredSize(new Dimension(100,100));
+        north.setLayout(new GridLayout(1,2));
+        add(north, BorderLayout.NORTH);
+
+        south.setBackground(mainColor);
+        south.setPreferredSize(new Dimension(150,150));
+        south.setLayout(new GridLayout());
+        add(south, BorderLayout.SOUTH);
+
+        east.setBackground(mainColor);
+        east.setPreferredSize(new Dimension(100,100));
+        east.setLayout(new GridLayout());
+        add(east, BorderLayout.EAST);
+
+        west.setBackground(mainColor);
+        west.setPreferredSize(new Dimension(100,100));
+        west.setLayout(new GridLayout());
+        add(west, BorderLayout.WEST);
+
+        centre.setBackground(mainColor);
+        centre.setLayout(new GridLayout());
+        add(centre, BorderLayout.CENTER);
+
+        panel1.setBackground(mainColor);
+        north.add(panel1);
+        panel1.setLayout(new BoxLayout(panel1, BoxLayout.X_AXIS));
+
+        panel2.setBackground(mainColor);
+        north.add(panel2);
+        panel2.setLayout(new BoxLayout(panel2, BoxLayout.X_AXIS));
+
+        panel3.setBackground(mainColor);
+        east.add(panel3);
+        panel3.setLayout(new BoxLayout(panel3, BoxLayout.Y_AXIS));
+
+        panel4.setBackground(mainColor);
+        west.add(panel4);
+        panel4.setLayout(new BoxLayout(panel4, BoxLayout.Y_AXIS));
+
+        panel5.setBackground(mainColor);
+        south.add(panel5);
+        panel5.setLayout(new BoxLayout(panel5, BoxLayout.X_AXIS));
+
+        panel7.setBackground(mainColor);
+        centre.add(panel7);
+
         CreateCardPanelForEachPlayer();
-        CreateGameInfoPanel();
-
-        this.add(panCards);
     }
 
     private void CreateCardPanelForEachPlayer(){
         panelPlayerNames.setVisible(false);
-
-        JPanel panTemp;
-
-        //panCards.setLayout(new BoxLayout(panCards, BoxLayout.Y_AXIS));
-
-        for(int j=0; j < game.getPlayers().size(); j++ ){
+        JPanel panTemp = new JPanel();
+        //panTemp.setLayout(new BoxLayout(panTemp, BoxLayout.Y_AXIS ));
+        for (int i = 0; i <  game.getPlayers().size(); i++){
             panTemp = new JPanel();
             panTemp.setBackground(mainColor);
-            panTemp.setLayout(new BoxLayout(panTemp, BoxLayout.X_AXIS));
-            panTemp.setBorder(BorderFactory.createTitledBorder(game.getPlayer(j).getPlayerName()));
+            panTemp.setBorder(BorderFactory.createTitledBorder(game.getPlayer(i).getPlayerName()));
 
-            PrintPlayersCardsInHand(j, panTemp);
-
+            PrintPlayersCardsInHand(i, panTemp);
             panPlayersCards.add(panTemp);
-            panCards.add(panPlayersCards.get(j));
         }
-
+        if (game.getPlayers().size() == 3) {
+            panel5.add(panPlayersCards.get(0));
+            panel3.add(panPlayersCards.get(1));
+            panel4.add(panPlayersCards.get(2));
+        } else if (game.getPlayers().size() == 4){
+            panel5.add(panPlayersCards.get(0));
+            panel3.add(panPlayersCards.get(1));
+            panel4.add(panPlayersCards.get(2));
+            panel2.add(panPlayersCards.get(3));
+        } else if (game.getPlayers().size() == 5) {
+            panel5.add(panPlayersCards.get(0));
+            panel3.add(panPlayersCards.get(1));
+            panel2.add(panPlayersCards.get(3));
+            panel1.add(panPlayersCards.get(4));
+        } else{
+            int input = JOptionPane.showOptionDialog(null, "Sorry invalid number of players please enter again", "Invalid Value", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
+            if(input == JOptionPane.OK_OPTION)
+            {
+                con.removeAll();
+                con.revalidate();
+                con.repaint();
+                new MainGUI();
+            }
+        }
     }
 
     private void CreateGameInfoPanel() {
@@ -152,7 +225,7 @@ public class MainGUI extends JFrame {
         panGameInfo.setBorder(BorderFactory.createTitledBorder("CURRENT GAME INFORMATION"));
 
         lblDealerName.setText(" DEALER : " + game.getPlayer(game.getDealerID()).getPlayerName());
-        lblNextPlayerName.setText("Next Player : " + game.getPlayer(game.getNextPlayer()).getPlayerName());
+        lblNextPlayerName.setText(" Next Player : " + game.getPlayer(game.getNextPlayer()).getPlayerName());
 
         panGameInfo.add(lblDealerName);
         panGameInfo.add(lblNextPlayerName);
@@ -165,22 +238,22 @@ public class MainGUI extends JFrame {
 
         JButton btnPassGame = new JButton("Pass");
         panCards.add(btnPassGame);
-        btnPassGame.addActionListener(new ActionListener() {
+//        btnPassGame.addActionListener(new ActionListener() {
 
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                STCard card = game.drawCardFromDeck(0);
-                if (card != null) {
-                    PrintPlayersCardsInHand(0, panPlayersCards.get(0));
-                } else {
-                    int result = JOptionPane.showConfirmDialog(null, "Sorry No More Cards Available In The Deck \n Would You Like To Play A New Game", "No More Cards", JOptionPane.YES_NO_OPTION);
-                    if (result == JOptionPane.YES_OPTION) {
-                        removeAll();
-                        new MainGUI();
-                    }
-                }
-            }
-        });
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                STCard card = game.drawCardFromDeck(0);
+//                if (card != null) {
+//                    PrintPlayersCardsInHand(0, panPlayersCards.get(0));
+//                } else {
+//                    int result = JOptionPane.showConfirmDialog(null, "Sorry No More Cards Available In The Deck \n Would You Like To Play A New Game", "No More Cards", JOptionPane.YES_NO_OPTION);
+//                    if (result == JOptionPane.YES_OPTION) {
+//                        removeAll();
+//                        new MainGUI();
+//                    }
+//                }
+//            }
+//        });
     }
 
     private void AddPlayers(){
