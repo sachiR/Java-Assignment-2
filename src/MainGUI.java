@@ -24,9 +24,6 @@ public class MainGUI extends JFrame {
     JPanel panel4= new JPanel();
     JPanel panel5= new JPanel();
     JPanel panel6= new JPanel();
-    JPanel panel7= new JPanel();
-    JPanel panel8= new JPanel();
-    JPanel panel9 = new JPanel();
 
     ArrayList<JPanel> panPlayersCards = new ArrayList<>();
     ArrayList<STPlayer> players = new ArrayList<>();
@@ -55,12 +52,12 @@ public class MainGUI extends JFrame {
 
         //setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
 
-        setpanelNumberOfPlayers();
+        setPanelNumberOfPlayers();
         pack();
         setVisible(true);
     }
 
-    public void setpanelNumberOfPlayers(){
+    public void setPanelNumberOfPlayers(){
         panelNumberOfPlayers.setLayout(new FlowLayout());
         panelNumberOfPlayers.setBackground(mainColor);
 
@@ -106,6 +103,7 @@ public class MainGUI extends JFrame {
 
             JTextField playerAnswer = new JTextField(30);
             playerAnswer.setFont(mainFont);
+            playerAnswer.setText("Player " + i);
             txtPlayerNames.add(playerAnswer);
             smallPlayerName.add(txtPlayerNames.get(i - 1));
         }
@@ -133,7 +131,7 @@ public class MainGUI extends JFrame {
 
         north.setBackground(mainColor);
         north.setPreferredSize(new Dimension(100,100));
-        north.setLayout(new GridLayout(1,2));
+        north.setLayout(new GridLayout());
         add(north, BorderLayout.NORTH);
 
         south.setBackground(mainColor);
@@ -175,9 +173,10 @@ public class MainGUI extends JFrame {
         south.add(panel5);
         panel5.setLayout(new BoxLayout(panel5, BoxLayout.X_AXIS));
 
-        panel7.setBackground(mainColor);
-        centre.add(panel7);
+        panel6.setBackground(mainColor);
+        centre.add(panel6);
 
+       // CreateGameInfoPanel();
         CreateCardPanelForEachPlayer();
     }
 
@@ -205,8 +204,9 @@ public class MainGUI extends JFrame {
         } else if (game.getPlayers().size() == 5) {
             panel5.add(panPlayersCards.get(0));
             panel3.add(panPlayersCards.get(1));
-            panel2.add(panPlayersCards.get(3));
-            panel1.add(panPlayersCards.get(4));
+            panel2.add(panPlayersCards.get(2));
+            panel1.add(panPlayersCards.get(3));
+            panel4.add(panPlayersCards.get(4));
         } else{
             int input = JOptionPane.showOptionDialog(null, "Sorry invalid number of players please enter again", "Invalid Value", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
             if(input == JOptionPane.OK_OPTION)
@@ -234,10 +234,10 @@ public class MainGUI extends JFrame {
 
         panPlayersCards.add(panGameInfo);
         int size = panPlayersCards.size() - 1;
-        panCards.add(panPlayersCards.get(size));
+        panel6.add(panPlayersCards.get(size), TOP_ALIGNMENT);
 
         JButton btnPassGame = new JButton("Pass");
-        panCards.add(btnPassGame);
+        panel6.add(btnPassGame, BOTTOM_ALIGNMENT);
 //        btnPassGame.addActionListener(new ActionListener() {
 
 //            @Override
