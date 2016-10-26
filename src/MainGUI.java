@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.util.ArrayList;
 
 public class MainGUI extends JFrame {
@@ -37,6 +36,14 @@ public class MainGUI extends JFrame {
     JLabel lblTrumpCategory = new JLabel();
     JLabel lblTrumpValue = new JLabel();
     JButton btnLastPlayCard = new JButton();
+    JButton btnPlayNextCard = new JButton("Play Next Card");
+    JButton btnPass = new JButton("Pass");
+
+    JRadioButton optTrumpCat01 = new JRadioButton(STCard.enumCategory.Hardness.toString());
+    JRadioButton optTrumpCat02 = new JRadioButton(STCard.enumCategory.Specific_Gravity.toString());
+    JRadioButton optTrumpCat03 = new JRadioButton(STCard.enumCategory.Cleavage.toString());
+    JRadioButton optTrumpCat04 = new JRadioButton(STCard.enumCategory.Crustal_Abundance.toString());
+    JRadioButton optTrumpCat05 = new JRadioButton(STCard.enumCategory.Economic_Value.toString());
 
     Color mainColor = new Color(0, 153, 0);
     Font mainFont = new Font("Arial", Font.ITALIC, 22);
@@ -221,45 +228,286 @@ public class MainGUI extends JFrame {
     }
 
     private void CreateGameInfoPanel() {
-        panGameInfo.setBackground(mainColor);
         panGameInfo.setLayout(new BoxLayout(panGameInfo, BoxLayout.LINE_AXIS));
         panGameInfo.setBorder(BorderFactory.createTitledBorder("CURRENT GAME INFORMATION"));
 
-        lblDealerName.setText(" DEALER : " + game.getPlayer(game.getDealerID()).getPlayerName());
-        lblNextPlayerName.setText(" Next Player : " + game.getPlayer(game.getNextPlayer()).getPlayerName());
+        lblDealerName.setText(" DEALER : " + game.getPlayer(game.getDealerID()).getPlayerName() + "|");
+        lblNextPlayerName.setText(" Next Player : " + game.getPlayer(game.getNextPlayerID()).getPlayerName()+ "|");
+        lblTrumpCategory.setText(" Trump Category : " + game.getTrumpGategory()+ "|");
+        lblTrumpValue.setText(" Max Value : " );
 
         panGameInfo.add(lblDealerName);
         panGameInfo.add(lblNextPlayerName);
+        panGameInfo.add(lblTrumpCategory);
+        panGameInfo.add(lblTrumpValue);
+
+        btnLastPlayCard.setIcon(new STCard().getCardTopImage());
+
+        CreateTrupOptionGroup();
+
+        btnPlayNextCard.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                btnPlayNextCard_Clicked(e);
+            }
+        });
+        panGameInfo.add(btnPlayNextCard);
+
+        btnPass.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                btnPass_Clicked(e);
+            }
+        });
+        panGameInfo.add(btnPass);
 
         panGameInfo.add(btnLastPlayCard);
-
         panel6.add(panGameInfo);
-        int size = panPlayersCards.size() - 1;
-//        panel6.add(panPlayersCards.get(size), TOP_ALIGNMENT);
+//        panPlayersCards.add(panGameInfo);
+//        int size = panPlayersCards.size()-1;
+//        panCards.add(panPlayersCards.get(size));
 
-        JButton btnPassGame = new JButton("Pass");
-//        panel6.add(btnPassGame, BOTTOM_ALIGNMENT);
-        //btnPassGame.addActionListener(new ActionListener() {
-
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                STCard card = game.drawCardFromDeck(0);
-//                if (card != null) {
-//                    PrintPlayersCardsInHand(0, panPlayersCards.get(0));
-//                } else {
-//                    int result = JOptionPane.showConfirmDialog(null, "Sorry No More Cards Available In The Deck \n Would You Like To Play A New Game", "No More Cards", JOptionPane.YES_NO_OPTION);
-//                    if (result == JOptionPane.YES_OPTION) {
-//                        removeAll();
-//                        new MainGUIWindow();
-//                    }
-//                }
-//            }
-//        });
     }
 
+    private void UpdateGameInfoPanel(){
+
+        UpdateTrumpSelectedOption();
+
+        panGameInfo.remove(btnLastPlayCard);
+
+        lblNextPlayerName.setText("Next Player : " + game.getPlayer(game.getNextPlayerID()).getPlayerName());
+        lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+        lblTrumpValue.setText("Max Value : " + game.getTrumpValue() );
+
+        btnLastPlayCard.setIcon(game.getLastPlayCard().getCardBottomImage());
+        panGameInfo.add(btnLastPlayCard);
+
+        //panGameInfo.revalidate();
+        //panGameInfo.repaint();
+
+    }
+
+    private void btnPass_Clicked(ActionEvent e) {
+        STCard card = game.GetCardFromDeck();
+        //int npid
+        game.getPlayer(game.getNextPlayerID()).getCardsInHand().add(card);
+
+        JButton btn = createButton(game.getNextPlayerID(), game.getPlayer(game.getNextPlayerID()).getCardsInHand().size()-1);
+        btnPlayersCards.add(btn);
+
+        panPlayersCards.get(game.getNextPlayerID()).add(btn);
+
+        game.ChangePlayer();
+
+        panPlayersCards.get(game.getNextPlayerID()).revalidate();
+        panPlayersCards.get(game.getNextPlayerID()).repaint();
+
+        UpdateGameInfoPanel();
+    }       //Completed
+
+    private void btnPlayNextCard_Clicked(ActionEvent e) {
+
+        STCard stcard = game.PlayRandomCard(game.getNextPlayerID());
+        if(stcard == null){
+            btnPass.doClick();
+            return;
+        }
+        ButtonClickOnGame(stcard);
+
+
+        RemoveCardButtonFromHand(stcard);
+        UpdateGameInfoPanel();
+
+    }
+
+    private void btnClick(ActionEvent e){
+
+        //--- Check if Trump Category Selected ---
+        if(IsTrumpSelected() == null){
+            JOptionPane.showMessageDialog(null, "You Have NOT Selected any Trump Category, Please Select a Category and try Again " , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+        JButton btnTemp = new JButton();
+
+        //--- Get Clicked btnPlayersCards and Add to btnLastPlayCard ---
+        for (int j = 0; j < btnPlayersCards.size(); j++) {
+            if (e.getSource() == btnPlayersCards.get(j)) //gameButtons[i][j] was clicked
+            {
+                //btnLastPlayCard = btnPlayersCards.get(j);
+                btnTemp = btnPlayersCards.get(j);
+                break;
+            }
+        }
+        //--- Get the Player ID and STCard ID from the btnLastPlayCard ---
+        int playerid = -1;
+        int cardid = Integer.parseInt(btnTemp.getName());
+
+        Object property = btnTemp.getClientProperty("playerID");
+        if (property instanceof Integer) {
+            playerid = ((Integer)property);
+        }
+
+        //--- Get the Index of the Card in Players Array of Cards ---
+        int index = game.GetIndexByCardIDOfCardInHand(playerid, cardid);
+
+        STCard stcard = game.getPlayer(playerid).getCardsInHand().get(index);
+
+        if(game.getLastPlayCard() == null){
+            ButtonClickOnGame(stcard);
+        } else {
+            if(game.ValidatePlayedCard(stcard)){
+
+            } else {
+                JOptionPane.showMessageDialog(null, "Selected Card is Not Valid, Please Select Higher Value in Trup or Change Trump Category " , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                return;
+            };
+        }
+        btnLastPlayCard = btnTemp;
+        RemoveCardButtonFromHand(stcard);
+        UpdateGameInfoPanel();
+
+    }
+
+    private void ButtonClickOnGame(STCard stcard ){
+        int cardid = stcard.getCardID();
+        int playerid = -1;
+
+
+        for(int i = 0; i< btnPlayersCards.size(); i++){
+            int id = Integer.parseInt(btnPlayersCards.get(i).getName());
+            if(id == cardid){
+                btnLastPlayCard = btnPlayersCards.get(i);
+                Object property = btnLastPlayCard.getClientProperty("playerID");
+
+                if (property instanceof Integer) {
+                    playerid = ((Integer)property);
+                }
+
+                break;
+            }
+        }
+
+    }
+
+    private void CreateTrupOptionGroup(){
+        JPanel panTemp = new JPanel();
+        panTemp.setLayout(new BoxLayout(panTemp, BoxLayout.LINE_AXIS));
+        panTemp.setBorder(BorderFactory.createTitledBorder("Select Trup Category"));
+
+        optTrumpCat01.setMnemonic(KeyEvent.VK_H);
+        optTrumpCat02.setMnemonic(KeyEvent.VK_S);
+        optTrumpCat03.setMnemonic(KeyEvent.VK_C);
+        optTrumpCat04.setMnemonic(KeyEvent.VK_A);
+        optTrumpCat05.setMnemonic(KeyEvent.VK_E);
+
+        optTrumpCat01.addItemListener(new ItemListener() {
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getStateChange()==1){
+                    JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Hardness.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                    game.setTrumpCategory(STCard.enumCategory.Hardness);
+                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+                }
+            }
+        });
+
+        optTrumpCat02.addItemListener(new ItemListener() {
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getStateChange()==1){
+                    JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Specific_Gravity.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                    game.setTrumpCategory(STCard.enumCategory.Specific_Gravity);
+                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+                }
+            }
+        });
+
+        optTrumpCat03.addItemListener(new ItemListener() {
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getStateChange()==1){
+                    JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Cleavage.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                    game.setTrumpCategory(STCard.enumCategory.Cleavage);
+                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+                }
+            }
+        });
+
+        optTrumpCat04.addItemListener(new ItemListener() {
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getStateChange()==1){
+                    JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Crustal_Abundance.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                    game.setTrumpCategory(STCard.enumCategory.Crustal_Abundance);
+                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+                }
+            }
+        });
+
+        optTrumpCat05.addItemListener(new ItemListener() {
+            public void itemStateChanged(ItemEvent e) {
+                if(e.getStateChange()==1){
+                    JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Economic_Value.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                    game.setTrumpCategory(STCard.enumCategory.Economic_Value);
+                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+                }
+            }
+        });
+
+        //Group the radio buttons.
+        ButtonGroup group = new ButtonGroup();
+
+        group.add(optTrumpCat01);
+        group.add(optTrumpCat02);
+        group.add(optTrumpCat03);
+        group.add(optTrumpCat04);
+        group.add(optTrumpCat05);
+
+        panGameInfo.add(optTrumpCat01);
+        panGameInfo.add(optTrumpCat02);
+        panGameInfo.add(optTrumpCat03);
+        panGameInfo.add(optTrumpCat04);
+        panGameInfo.add(optTrumpCat05);
+    }
+
+    private void UpdateTrumpSelectedOption(){
+        switch (game.getTrumpGategory().ordinal()){
+            case 0:
+                optTrumpCat01.doClick();
+                break;
+            case 1:
+                optTrumpCat02.doClick();
+                break;
+            case 2:
+                optTrumpCat03.doClick();
+                break;
+            case 3:
+                optTrumpCat04.doClick();
+                break;
+            case 4:
+                optTrumpCat05.doClick();
+                break;
+        }
+
+    }
+    private JRadioButton IsTrumpSelected(){
+        if(optTrumpCat01.isSelected()){
+            return optTrumpCat01;
+        }
+        if(optTrumpCat02.isSelected()){
+            return optTrumpCat02;
+        }
+        if(optTrumpCat03.isSelected()){
+            return optTrumpCat03;
+        }
+        if(optTrumpCat04.isSelected()){
+            return optTrumpCat04;
+        }
+        if(optTrumpCat05.isSelected()){
+            return optTrumpCat05;
+        }
+        return null;
+    }
 
     private void AddPlayers(){
-        players.add(new STPlayer(0,"You"));
+        players.add(new STPlayer(0,"Sachini Perera"));
 
         for(int i = 0; i < Integer.parseInt(txtNoOfPlayers.getText())-1; i++){
             players.add(new STPlayer(i+1,txtPlayerNames.get(i).getText()));
@@ -278,6 +526,7 @@ public class MainGUI extends JFrame {
         JButton btnTemp;
         for(int i = 0; i < game.getPlayer(playerID).getCardsInHand().size(); i++){
             btnTemp = createButton(playerID, i);
+            btnPlayersCards.add(btnTemp);
             pan.add(btnTemp);
         }
     }
@@ -286,8 +535,16 @@ public class MainGUI extends JFrame {
         JButton button = new JButton();
         if(playerID == 0) {
             button.setIcon(game.getPlayer(playerID).getCardsInHand().get(cardID).getCardBottomImage());
-            //button.setIcon(new ImageIcon(((new ImageIcon("images\\" + game.getPlayer(playerID).getCardsInHand().get(cardID).getImageName() + ".jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
+
+            button.setFocusable(false);
+            button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    btnClick(e);
+                }
+            });
         } else {
+            button.setSelected(false);
             button.setIcon(game.getPlayer(playerID).getCardsInHand().get(cardID).getCardTopImage());
             //button.setIcon(new ImageIcon(((new ImageIcon("images\\Slide66.jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
         }
@@ -295,6 +552,8 @@ public class MainGUI extends JFrame {
         button.setName(String.valueOf(game.getPlayer(playerID).getCardsInHand().get(cardID).getCardID()));
         button.putClientProperty("playerID", Integer.valueOf(playerID));
 
+        //--- CHECK START - THIS NEED TO BE COMMENT---
+        /*
         button.setFocusable(false);
         button.addActionListener(new ActionListener() {
             @Override
@@ -302,44 +561,34 @@ public class MainGUI extends JFrame {
                 btnClick(e);
             }
         });
+        */
+        //--- END CHECK---
+
         return button;
     }
 
-    private void btnClick(ActionEvent e){
-
-        panGameInfo.remove(btnLastPlayCard);
-        btnLastPlayCard = (JButton)e.getSource();
-
-        int playerid = -1;
-        Object property = btnLastPlayCard.getClientProperty("playerID");
-        if (property instanceof Integer) {
-            playerid = ((Integer)property);
-            // do stuff
-        }
-
-        int cardid = Integer.parseInt(btnLastPlayCard.getName());
-        //int playerid = Integer.parseInt(btnLastPlayCard.getText());
-
-        int index = GetIndexByCardID(playerid, cardid);
-
-        ImageIcon img = game.getPlayer(playerid).getCardsInHand().get(index).getCardBottomImage();
-
-        btnLastPlayCard.setIcon(img);
-
-        panGameInfo.add(btnLastPlayCard);
-
-        panPlayersCards.get(playerid).remove(btnLastPlayCard);
-        panPlayersCards.get(playerid).revalidate();
-        panPlayersCards.get(playerid).repaint();
-
-        //=== Remove Card from Player ===
-        game.getPlayer(playerid).getCardsInHand().remove(index);
+    private void AddButtonToPlayerPanel(JPanel pan, JButton btn){
+        pan.add(btn);
     }
 
-    private int GetIndexByCardID(int playerID, int cardID){
-        for(int i = 0; i<game.getPlayer(playerID).getCardsInHand().size(); i++){
-            if(game.getPlayer(playerID).getCardsInHand().get(i).getCardID() == cardID ){return i;}
-        }
-        return -1;
+    private void UpdatePlayerCardPanel(int uid){
+        panPlayersCards.get(uid).revalidate();
+        panPlayersCards.get(uid).repaint();
+    }
+
+    private void RemoveCardButtonFromHand(STCard selectedCard ){
+
+        //panGameInfo.remove(btnLastPlayCard);
+        //panGameInfo.revalidate();
+        //panGameInfo.repaint();
+
+        panGameInfo.remove(btnLastPlayCard);
+
+        game.AfterCardPlay(selectedCard);
+
+        panPlayersCards.get(game.getLastPlayerID()).remove(btnLastPlayCard);
+        panPlayersCards.get(game.getLastPlayerID()).revalidate();
+        panPlayersCards.get(game.getLastPlayerID()).repaint();
+
     }
 }
