@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.text.PlainDocument;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
@@ -16,6 +17,8 @@ public class MainGUI extends JFrame {
     JPanel east = new JPanel();
     JPanel west = new JPanel();
     JPanel south = new JPanel();
+    JPanel lbls = new JPanel();
+    JPanel trump = new JPanel();
 
     JPanel panel1= new JPanel();
     JPanel panel2= new JPanel();
@@ -137,12 +140,12 @@ public class MainGUI extends JFrame {
         game.DealCardsToEachPlayer();
 
         north.setBackground(mainColor);
-        north.setPreferredSize(new Dimension(100,100));
+        north.setPreferredSize(new Dimension(80,80));
         north.setLayout(new GridLayout());
         add(north, BorderLayout.NORTH);
 
         south.setBackground(mainColor);
-        south.setPreferredSize(new Dimension(150,150));
+        south.setPreferredSize(new Dimension(200,200));
         south.setLayout(new GridLayout());
         add(south, BorderLayout.SOUTH);
 
@@ -194,6 +197,7 @@ public class MainGUI extends JFrame {
         //panTemp.setLayout(new BoxLayout(panTemp, BoxLayout.Y_AXIS ));
         for (int i = 0; i <  game.getPlayers().size(); i++){
             panTemp = new JPanel();
+            panTemp.setFont(mainFont);
             panTemp.setBackground(mainColor);
             panTemp.setBorder(BorderFactory.createTitledBorder(game.getPlayer(i).getPlayerName()));
 
@@ -227,23 +231,29 @@ public class MainGUI extends JFrame {
         }
     }
 
-    private void CreateGameInfoPanel() {
-        panGameInfo.setLayout(new BoxLayout(panGameInfo, BoxLayout.LINE_AXIS));
+    private void CreateGameInfoPanel(){
+        //panGameInfo.setLayout(new BoxLayout(panGameInfo, BoxLayout.LINE_AXIS));
+        panGameInfo.setBackground(mainColor);
+        panGameInfo.setLayout(new GridLayout());
         panGameInfo.setBorder(BorderFactory.createTitledBorder("CURRENT GAME INFORMATION"));
 
-        lblDealerName.setText(" DEALER : " + game.getPlayer(game.getDealerID()).getPlayerName() + "|");
-        lblNextPlayerName.setText(" Next Player : " + game.getPlayer(game.getNextPlayerID()).getPlayerName()+ "|");
-        lblTrumpCategory.setText(" Trump Category : " + game.getTrumpGategory()+ "|");
-        lblTrumpValue.setText(" Max Value : " );
+        //panLastCardInfo.setBorder(BorderFactory.createTitledBorder("LAST CARD PLAYED"));
+        lblDealerName.setText("DEALER : " + game.getPlayer(game.getDealerID()).getPlayerName() + "  |");
+        lblNextPlayerName.setText("Next Player : " + game.getPlayer(game.getNextPlayerID()).getPlayerName()+ "  |");
+//        lblTrumpCategory.setText(" Trump Category : " + game.getTrumpCategory()+ "|");
+//        lblTrumpValue.setText(" Max Value : " );
 
-        panGameInfo.add(lblDealerName);
-        panGameInfo.add(lblNextPlayerName);
-        panGameInfo.add(lblTrumpCategory);
-        panGameInfo.add(lblTrumpValue);
+        lbls.setBackground(mainColor);
+        panGameInfo.add(lbls, BorderLayout.LINE_START);
 
-        btnLastPlayCard.setIcon(new STCard().getCardTopImage());
+        lbls.add(lblDealerName);
+        lbls.add(lblNextPlayerName);
+        lbls.add(lblTrumpCategory);
+        lbls.add(lblTrumpValue);
 
-        CreateTrupOptionGroup();
+        //btnLastPlayCard.setIcon(new STCard().getCardTopImage());
+
+        CreateTrumpOptionGroup();
 
         btnPlayNextCard.addActionListener(new ActionListener() {
             @Override
@@ -251,7 +261,7 @@ public class MainGUI extends JFrame {
                 btnPlayNextCard_Clicked(e);
             }
         });
-        panGameInfo.add(btnPlayNextCard);
+        lbls.add(btnPlayNextCard, BorderLayout.LINE_END);
 
         btnPass.addActionListener(new ActionListener() {
             @Override
@@ -259,11 +269,14 @@ public class MainGUI extends JFrame {
                 btnPass_Clicked(e);
             }
         });
-        panGameInfo.add(btnPass);
+        lbls.add(btnPass, BorderLayout.LINE_END);
 
-        panGameInfo.add(btnLastPlayCard);
+        //JButton b = new JButton();
+        //btnLastPlayCard.setIcon(new STCard().getCardTopImage());
+
+        //panGameInfo.add(panLastCardInfo.add(btnLastPlayCard));
+
         panel6.add(panGameInfo);
-//        panPlayersCards.add(panGameInfo);
 //        int size = panPlayersCards.size()-1;
 //        panCards.add(panPlayersCards.get(size));
 
@@ -273,14 +286,12 @@ public class MainGUI extends JFrame {
 
         UpdateTrumpSelectedOption();
 
-        panGameInfo.remove(btnLastPlayCard);
-
-        lblNextPlayerName.setText("Next Player : " + game.getPlayer(game.getNextPlayerID()).getPlayerName());
-        lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
-        lblTrumpValue.setText("Max Value : " + game.getTrumpValue() );
+        lblNextPlayerName.setText("Next Player : " + game.getPlayer(game.getNextPlayerID()).getPlayerName()+ "  |");
+        lblTrumpCategory.setText("Trump Category : " + game.getTrumpCategory()+ "  |");
+        lblTrumpValue.setText("Max Value : " + game.getTrumpValue()+ "  |");
 
         btnLastPlayCard.setIcon(game.getLastPlayCard().getCardBottomImage());
-        panGameInfo.add(btnLastPlayCard);
+        lbls.add(btnLastPlayCard,BorderLayout.CENTER);
 
         //panGameInfo.revalidate();
         //panGameInfo.repaint();
@@ -303,7 +314,7 @@ public class MainGUI extends JFrame {
         panPlayersCards.get(game.getNextPlayerID()).repaint();
 
         UpdateGameInfoPanel();
-    }       //Completed
+    }
 
     private void btnPlayNextCard_Clicked(ActionEvent e) {
 
@@ -312,6 +323,7 @@ public class MainGUI extends JFrame {
             btnPass.doClick();
             return;
         }
+        panGameInfo.remove(btnLastPlayCard);
         ButtonClickOnGame(stcard);
 
 
@@ -340,18 +352,18 @@ public class MainGUI extends JFrame {
             }
         }
         //--- Get the Player ID and STCard ID from the btnLastPlayCard ---
-        int playerid = -1;
-        int cardid = Integer.parseInt(btnTemp.getName());
+        int playerID = -1;
+        int cardID = Integer.parseInt(btnTemp.getName());
 
         Object property = btnTemp.getClientProperty("playerID");
         if (property instanceof Integer) {
-            playerid = ((Integer)property);
+            playerID = ((Integer)property);
         }
 
         //--- Get the Index of the Card in Players Array of Cards ---
-        int index = game.GetIndexByCardIDOfCardInHand(playerid, cardid);
+        int index = game.GetIndexByCardIDOfCardInHand(playerID, cardID);
 
-        STCard stcard = game.getPlayer(playerid).getCardsInHand().get(index);
+        STCard stcard = game.getPlayer(playerID).getCardsInHand().get(index);
 
         if(game.getLastPlayCard() == null){
             ButtonClickOnGame(stcard);
@@ -359,10 +371,12 @@ public class MainGUI extends JFrame {
             if(game.ValidatePlayedCard(stcard)){
 
             } else {
-                JOptionPane.showMessageDialog(null, "Selected Card is Not Valid, Please Select Higher Value in Trup or Change Trump Category " , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Selected Card is Not Valid, Please Select Higher Value in Trump or Change Trump Category " , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                 return;
             };
         }
+        panGameInfo.remove(btnLastPlayCard);
+
         btnLastPlayCard = btnTemp;
         RemoveCardButtonFromHand(stcard);
         UpdateGameInfoPanel();
@@ -387,13 +401,12 @@ public class MainGUI extends JFrame {
                 break;
             }
         }
-
     }
 
-    private void CreateTrupOptionGroup(){
+    private void CreateTrumpOptionGroup(){
         JPanel panTemp = new JPanel();
         panTemp.setLayout(new BoxLayout(panTemp, BoxLayout.LINE_AXIS));
-        panTemp.setBorder(BorderFactory.createTitledBorder("Select Trup Category"));
+        panTemp.setBorder(BorderFactory.createTitledBorder("Select Trump Category"));
 
         optTrumpCat01.setMnemonic(KeyEvent.VK_H);
         optTrumpCat02.setMnemonic(KeyEvent.VK_S);
@@ -404,9 +417,9 @@ public class MainGUI extends JFrame {
         optTrumpCat01.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 if(e.getStateChange()==1){
-                    JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Hardness.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Changed Trump Category to " + STCard.enumCategory.Hardness.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                     game.setTrumpCategory(STCard.enumCategory.Hardness);
-                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpCategory());
                 }
             }
         });
@@ -416,7 +429,7 @@ public class MainGUI extends JFrame {
                 if(e.getStateChange()==1){
                     JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Specific_Gravity.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                     game.setTrumpCategory(STCard.enumCategory.Specific_Gravity);
-                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpCategory());
                 }
             }
         });
@@ -424,9 +437,9 @@ public class MainGUI extends JFrame {
         optTrumpCat03.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 if(e.getStateChange()==1){
-                    JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Cleavage.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Changed Trump Category to " + STCard.enumCategory.Cleavage.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                     game.setTrumpCategory(STCard.enumCategory.Cleavage);
-                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpCategory());
                 }
             }
         });
@@ -434,9 +447,9 @@ public class MainGUI extends JFrame {
         optTrumpCat04.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 if(e.getStateChange()==1){
-                    JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Crustal_Abundance.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Changed Trump Category to " + STCard.enumCategory.Crustal_Abundance.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                     game.setTrumpCategory(STCard.enumCategory.Crustal_Abundance);
-                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpCategory());
                 }
             }
         });
@@ -444,9 +457,9 @@ public class MainGUI extends JFrame {
         optTrumpCat05.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 if(e.getStateChange()==1){
-                    JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Economic_Value.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Changed Trump Category to " + STCard.enumCategory.Economic_Value.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                     game.setTrumpCategory(STCard.enumCategory.Economic_Value);
-                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpGategory());
+                    lblTrumpCategory.setText("Trump Category : " + game.getTrumpCategory());
                 }
             }
         });
@@ -460,15 +473,15 @@ public class MainGUI extends JFrame {
         group.add(optTrumpCat04);
         group.add(optTrumpCat05);
 
-        panGameInfo.add(optTrumpCat01);
-        panGameInfo.add(optTrumpCat02);
-        panGameInfo.add(optTrumpCat03);
-        panGameInfo.add(optTrumpCat04);
-        panGameInfo.add(optTrumpCat05);
+        lbls.add(optTrumpCat01);
+        lbls.add(optTrumpCat02);
+        lbls.add(optTrumpCat03);
+        lbls.add(optTrumpCat04);
+        lbls.add(optTrumpCat05);
     }
 
     private void UpdateTrumpSelectedOption(){
-        switch (game.getTrumpGategory().ordinal()){
+        switch (game.getTrumpCategory().ordinal()){
             case 0:
                 optTrumpCat01.doClick();
                 break;
@@ -487,6 +500,7 @@ public class MainGUI extends JFrame {
         }
 
     }
+
     private JRadioButton IsTrumpSelected(){
         if(optTrumpCat01.isSelected()){
             return optTrumpCat01;
@@ -507,7 +521,7 @@ public class MainGUI extends JFrame {
     }
 
     private void AddPlayers(){
-        players.add(new STPlayer(0,"Sachini Perera"));
+        players.add(new STPlayer(0,"You"));
 
         for(int i = 0; i < Integer.parseInt(txtNoOfPlayers.getText())-1; i++){
             players.add(new STPlayer(i+1,txtPlayerNames.get(i).getText()));
@@ -577,12 +591,6 @@ public class MainGUI extends JFrame {
     }
 
     private void RemoveCardButtonFromHand(STCard selectedCard ){
-
-        //panGameInfo.remove(btnLastPlayCard);
-        //panGameInfo.revalidate();
-        //panGameInfo.repaint();
-
-        panGameInfo.remove(btnLastPlayCard);
 
         game.AfterCardPlay(selectedCard);
 
