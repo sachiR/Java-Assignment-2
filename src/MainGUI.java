@@ -47,7 +47,7 @@ public class MainGUI extends JFrame {
 
     public MainGUI(){
         super("The Mineral Super Trump Card Game");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(MainGUI.EXIT_ON_CLOSE);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
 
         //setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
@@ -174,9 +174,10 @@ public class MainGUI extends JFrame {
         panel5.setLayout(new BoxLayout(panel5, BoxLayout.X_AXIS));
 
         panel6.setBackground(mainColor);
+        panel6.setLayout(new BorderLayout());
         centre.add(panel6);
 
-       // CreateGameInfoPanel();
+        CreateGameInfoPanel();
         CreateCardPanelForEachPlayer();
     }
 
@@ -232,13 +233,13 @@ public class MainGUI extends JFrame {
 
         panGameInfo.add(btnLastPlayCard);
 
-        panPlayersCards.add(panGameInfo);
+        panel6.add(panGameInfo);
         int size = panPlayersCards.size() - 1;
-        panel6.add(panPlayersCards.get(size), TOP_ALIGNMENT);
+//        panel6.add(panPlayersCards.get(size), TOP_ALIGNMENT);
 
         JButton btnPassGame = new JButton("Pass");
-        panel6.add(btnPassGame, BOTTOM_ALIGNMENT);
-//        btnPassGame.addActionListener(new ActionListener() {
+//        panel6.add(btnPassGame, BOTTOM_ALIGNMENT);
+        //btnPassGame.addActionListener(new ActionListener() {
 
 //            @Override
 //            public void actionPerformed(ActionEvent e) {
@@ -249,12 +250,13 @@ public class MainGUI extends JFrame {
 //                    int result = JOptionPane.showConfirmDialog(null, "Sorry No More Cards Available In The Deck \n Would You Like To Play A New Game", "No More Cards", JOptionPane.YES_NO_OPTION);
 //                    if (result == JOptionPane.YES_OPTION) {
 //                        removeAll();
-//                        new MainGUI();
+//                        new MainGUIWindow();
 //                    }
 //                }
 //            }
 //        });
     }
+
 
     private void AddPlayers(){
         players.add(new STPlayer(0,"You"));
