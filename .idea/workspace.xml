@@ -27,46 +27,39 @@
       <file leaf-file-name="MainGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="791">
-              <caret line="405" column="41" selection-start-line="405" selection-start-column="41" selection-end-line="405" selection-end-column="41" />
+            <state relative-caret-position="203">
+              <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#setPanelNumberOfPlayers#0;class#MainGUI#0" expanded="false" />
-                <element signature="e#3315#3316#0" expanded="true" />
-                <element signature="e#3368#3369#0" expanded="true" />
                 <element signature="method#setPanelPlayerNames#0;class#MainGUI#0" expanded="false" />
-                <element signature="method#NewGame#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#CreateCardPanelForEachPlayer#0;class#MainGUI#0" expanded="false" />
-                <element signature="class#9798:9963" expanded="false" />
-                <element signature="e#10159#10160#0" expanded="true" />
-                <element signature="e#10209#10210#0" expanded="true" />
-                <element signature="e#10282#10310#0" expanded="false" />
-                <element signature="e#10478#10524#0" expanded="false" />
+                <element signature="class#9933:10098" expanded="false" />
+                <element signature="e#10375#10403#0" expanded="false" />
+                <element signature="e#10571#10617#0" expanded="false" />
                 <element signature="method#UpdateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#btnPass_Clicked#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#btnPlayNextCard_Clicked#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#btnClick#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#ButtonClickOnGame#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#CreateTrumpOptionGroup#0;class#MainGUI#0" expanded="false" />
-                <element signature="class#15184:15684" expanded="false" />
-                <element signature="method#itemStateChanged#0;class#15184:15684" expanded="false" />
-                <element signature="class#15730:16245" expanded="false" />
-                <element signature="method#itemStateChanged#0;class#15730:16245" expanded="false" />
-                <element signature="class#16291:16791" expanded="false" />
-                <element signature="method#itemStateChanged#0;class#16291:16791" expanded="false" />
-                <element signature="class#16837:17355" expanded="false" />
-                <element signature="method#itemStateChanged#0;class#16837:17355" expanded="false" />
-                <element signature="class#17401:17913" expanded="false" />
-                <element signature="method#itemStateChanged#0;class#17401:17913" expanded="false" />
-                <element signature="method#UpdateTrumpSelectedOption#0;class#MainGUI#0" expanded="false" />
+                <element signature="class#15769:16269" expanded="false" />
+                <element signature="method#itemStateChanged#0;class#15769:16269" expanded="false" />
+                <element signature="class#16315:16830" expanded="false" />
+                <element signature="method#itemStateChanged#0;class#16315:16830" expanded="false" />
+                <element signature="class#16876:17376" expanded="false" />
+                <element signature="method#itemStateChanged#0;class#16876:17376" expanded="false" />
+                <element signature="class#17422:17940" expanded="false" />
+                <element signature="method#itemStateChanged#0;class#17422:17940" expanded="false" />
+                <element signature="class#17986:18498" expanded="false" />
+                <element signature="method#itemStateChanged#0;class#17986:18498" expanded="false" />
                 <element signature="method#IsTrumpSelected#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#AddPlayers#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#PrintPlayers#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#PrintPlayersCardsInHand#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#createButton#0;class#MainGUI#0" expanded="false" />
-                <element signature="e#20677#20678#0" expanded="true" />
-                <element signature="e#20728#20729#0" expanded="true" />
+                <element signature="class#21158:21328" expanded="false" />
                 <element signature="method#UpdatePlayerCardPanel#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#RemoveCardButtonFromHand#0;class#MainGUI#0" expanded="false" />
               </folding>
@@ -94,31 +87,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/STGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="196" column="52" selection-start-line="196" selection-start-column="52" selection-end-line="196" selection-end-column="52" />
-              <folding>
-                <element signature="method#setPlayers#0;class#STGame#0" expanded="false" />
-                <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
-                <element signature="method#ChangePlayer#0;class#STGame#0" expanded="false" />
-                <element signature="method#DealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
-                <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
-                <element signature="method#GetCardFromDeck#0;class#STGame#0" expanded="false" />
-                <element signature="method#PlayRandomCard#0;class#STGame#0" expanded="false" />
-                <element signature="method#GetTrumpCardIfExist#0;class#STGame#0" expanded="false" />
-                <element signature="method#ChangeTrumpCategory#0;class#STGame#0" expanded="false" />
-                <element signature="method#CompareAndReturnACard#0;class#STGame#0" expanded="false" />
-                <element signature="method#ValidatePlayedCard#0;class#STGame#0" expanded="false" />
-                <element signature="method#AfterCardPlay#0;class#STGame#0" expanded="false" />
-                <element signature="method#GetTrumpValue#0;class#STGame#0" expanded="false" />
-                <element signature="method#GetIndexByCardIDOfCardInHand#0;class#STGame#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="STPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/STPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -134,7 +102,7 @@
       <file leaf-file-name="STCard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/STCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="2057">
               <caret line="124" column="61" selection-start-line="124" selection-start-column="61" selection-end-line="124" selection-end-column="61" />
               <folding />
             </state>
@@ -144,7 +112,7 @@
       <file leaf-file-name="STDeck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/STDeck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-843">
+            <state relative-caret-position="34">
               <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
@@ -224,8 +192,8 @@
         <option value="$PROJECT_DIR$/src/PanelNumberOfPlayers.java" />
         <option value="$PROJECT_DIR$/src/STPlayer.java" />
         <option value="$PROJECT_DIR$/src/STGame.java" />
-        <option value="$PROJECT_DIR$/src/MainGUI.java" />
         <option value="$PROJECT_DIR$/src/STCard.java" />
+        <option value="$PROJECT_DIR$/src/MainGUI.java" />
       </list>
     </option>
   </component>
@@ -898,7 +866,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477489894967</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Layout is done and the playing cards is done">
+      <created>1477498975687</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1477498975687</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -918,7 +893,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29648608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -929,6 +903,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -969,7 +944,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="different background colours for border layout" />
     <MESSAGE value="Number of players printing" />
     <MESSAGE value="next players printing" />
     <MESSAGE value="STDeck and STCard" />
@@ -994,7 +968,8 @@
     <MESSAGE value="fixed game layout" />
     <MESSAGE value="Click work now" />
     <MESSAGE value="play cards done" />
-    <option name="LAST_COMMIT_MESSAGE" value="play cards done" />
+    <MESSAGE value="Layout is done and the playing cards is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Layout is done and the playing cards is done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1059,7 +1034,7 @@
     <entry file="file://$PROJECT_DIR$/src/game/main/test.java" />
     <entry file="file://$PROJECT_DIR$/src/STDeck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-843">
+        <state relative-caret-position="34">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="method#ShuffleTheDeck#0;class#STDeck#0" expanded="false" />
@@ -1077,10 +1052,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PanelNumberOfPlayers.java">
+    <entry file="file://$PROJECT_DIR$/src/STPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="method#STPlayer#1;class#STPlayer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/STCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="124" column="61" selection-start-line="124" selection-start-column="61" selection-end-line="124" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -1088,11 +1073,10 @@
     <entry file="file://$PROJECT_DIR$/src/STGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
-          <caret line="196" column="52" selection-start-line="196" selection-start-column="52" selection-end-line="196" selection-end-column="52" />
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
           <folding>
             <element signature="method#setPlayers#0;class#STGame#0" expanded="false" />
             <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
-            <element signature="method#ChangePlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#DealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#GetCardFromDeck#0;class#STGame#0" expanded="false" />
@@ -1108,66 +1092,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/STPlayer.java">
+    <entry file="file://$PROJECT_DIR$/src/PanelNumberOfPlayers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="method#STPlayer#1;class#STPlayer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/STCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="124" column="61" selection-start-line="124" selection-start-column="61" selection-end-line="124" selection-end-column="61" />
+        <state relative-caret-position="17">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="405" column="41" selection-start-line="405" selection-start-column="41" selection-end-line="405" selection-end-column="41" />
+        <state relative-caret-position="203">
+          <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
             <element signature="method#setPanelNumberOfPlayers#0;class#MainGUI#0" expanded="false" />
-            <element signature="e#3315#3316#0" expanded="true" />
-            <element signature="e#3368#3369#0" expanded="true" />
             <element signature="method#setPanelPlayerNames#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#NewGame#0;class#MainGUI#0" expanded="false" />
             <element signature="method#CreateCardPanelForEachPlayer#0;class#MainGUI#0" expanded="false" />
-            <element signature="class#9798:9963" expanded="false" />
-            <element signature="e#10159#10160#0" expanded="true" />
-            <element signature="e#10209#10210#0" expanded="true" />
-            <element signature="e#10282#10310#0" expanded="false" />
-            <element signature="e#10478#10524#0" expanded="false" />
+            <element signature="class#9933:10098" expanded="false" />
+            <element signature="e#10375#10403#0" expanded="false" />
+            <element signature="e#10571#10617#0" expanded="false" />
             <element signature="method#UpdateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
             <element signature="method#btnPass_Clicked#0;class#MainGUI#0" expanded="false" />
             <element signature="method#btnPlayNextCard_Clicked#0;class#MainGUI#0" expanded="false" />
             <element signature="method#btnClick#0;class#MainGUI#0" expanded="false" />
             <element signature="method#ButtonClickOnGame#0;class#MainGUI#0" expanded="false" />
             <element signature="method#CreateTrumpOptionGroup#0;class#MainGUI#0" expanded="false" />
-            <element signature="class#15184:15684" expanded="false" />
-            <element signature="method#itemStateChanged#0;class#15184:15684" expanded="false" />
-            <element signature="class#15730:16245" expanded="false" />
-            <element signature="method#itemStateChanged#0;class#15730:16245" expanded="false" />
-            <element signature="class#16291:16791" expanded="false" />
-            <element signature="method#itemStateChanged#0;class#16291:16791" expanded="false" />
-            <element signature="class#16837:17355" expanded="false" />
-            <element signature="method#itemStateChanged#0;class#16837:17355" expanded="false" />
-            <element signature="class#17401:17913" expanded="false" />
-            <element signature="method#itemStateChanged#0;class#17401:17913" expanded="false" />
-            <element signature="method#UpdateTrumpSelectedOption#0;class#MainGUI#0" expanded="false" />
+            <element signature="class#15769:16269" expanded="false" />
+            <element signature="method#itemStateChanged#0;class#15769:16269" expanded="false" />
+            <element signature="class#16315:16830" expanded="false" />
+            <element signature="method#itemStateChanged#0;class#16315:16830" expanded="false" />
+            <element signature="class#16876:17376" expanded="false" />
+            <element signature="method#itemStateChanged#0;class#16876:17376" expanded="false" />
+            <element signature="class#17422:17940" expanded="false" />
+            <element signature="method#itemStateChanged#0;class#17422:17940" expanded="false" />
+            <element signature="class#17986:18498" expanded="false" />
+            <element signature="method#itemStateChanged#0;class#17986:18498" expanded="false" />
             <element signature="method#IsTrumpSelected#0;class#MainGUI#0" expanded="false" />
             <element signature="method#AddPlayers#0;class#MainGUI#0" expanded="false" />
             <element signature="method#PrintPlayers#0;class#MainGUI#0" expanded="false" />
             <element signature="method#PrintPlayersCardsInHand#0;class#MainGUI#0" expanded="false" />
             <element signature="method#createButton#0;class#MainGUI#0" expanded="false" />
-            <element signature="e#20677#20678#0" expanded="true" />
-            <element signature="e#20728#20729#0" expanded="true" />
+            <element signature="class#21158:21328" expanded="false" />
             <element signature="method#UpdatePlayerCardPanel#0;class#MainGUI#0" expanded="false" />
             <element signature="method#RemoveCardButtonFromHand#0;class#MainGUI#0" expanded="false" />
           </folding>

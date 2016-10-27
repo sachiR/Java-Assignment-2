@@ -18,7 +18,6 @@ public class MainGUI extends JFrame {
     JPanel west = new JPanel();
     JPanel south = new JPanel();
     JPanel lbls = new JPanel();
-    JPanel trump = new JPanel();
 
     JPanel panel1= new JPanel();
     JPanel panel2= new JPanel();
@@ -26,6 +25,7 @@ public class MainGUI extends JFrame {
     JPanel panel4= new JPanel();
     JPanel panel5= new JPanel();
     JPanel panel6= new JPanel();
+    JPanel panel7 = new JPanel();
 
     ArrayList<JPanel> panPlayersCards = new ArrayList<>();
     ArrayList<STPlayer> players = new ArrayList<>();
@@ -187,6 +187,10 @@ public class MainGUI extends JFrame {
         panel6.setLayout(new BorderLayout());
         centre.add(panel6);
 
+        panel7.setBackground(mainColor);
+        panel7.setLayout(new GridLayout());
+        panel6.add(panel7, BorderLayout.SOUTH);
+
         CreateGameInfoPanel();
         CreateCardPanelForEachPlayer();
     }
@@ -261,7 +265,7 @@ public class MainGUI extends JFrame {
                 btnPlayNextCard_Clicked(e);
             }
         });
-        lbls.add(btnPlayNextCard, BorderLayout.LINE_END);
+        panel7.add(btnPlayNextCard);
 
         btnPass.addActionListener(new ActionListener() {
             @Override
@@ -269,7 +273,7 @@ public class MainGUI extends JFrame {
                 btnPass_Clicked(e);
             }
         });
-        lbls.add(btnPass, BorderLayout.LINE_END);
+        panel7.add(btnPass);
 
         //JButton b = new JButton();
         //btnLastPlayCard.setIcon(new STCard().getCardTopImage());
@@ -301,17 +305,17 @@ public class MainGUI extends JFrame {
     private void btnPass_Clicked(ActionEvent e) {
         STCard card = game.GetCardFromDeck();
         //int npid
-        game.getPlayer(game.getNextPlayerID()).getCardsInHand().add(card);
+        game.getPlayer(0).getCardsInHand().add(card);
 
-        JButton btn = createButton(game.getNextPlayerID(), game.getPlayer(game.getNextPlayerID()).getCardsInHand().size()-1);
+        JButton btn = createButton(game.getNextPlayerID(), game.getPlayer(0).getCardsInHand().size()-1);
         btnPlayersCards.add(btn);
 
-        panPlayersCards.get(game.getNextPlayerID()).add(btn);
+        panPlayersCards.get(0).add(btn);
 
         game.ChangePlayer();
 
-        panPlayersCards.get(game.getNextPlayerID()).revalidate();
-        panPlayersCards.get(game.getNextPlayerID()).repaint();
+        panPlayersCards.get(0).revalidate();
+        panPlayersCards.get(0).repaint();
 
         UpdateGameInfoPanel();
     }
@@ -319,8 +323,22 @@ public class MainGUI extends JFrame {
     private void btnPlayNextCard_Clicked(ActionEvent e) {
 
         STCard stcard = game.PlayRandomCard(game.getNextPlayerID());
-        if(stcard == null){
-            btnPass.doClick();
+        if(stcard == null || game.getNextPlayerID() != 0 ){
+            STCard card = game.GetCardFromDeck();
+            //int npid
+            game.getPlayer(game.getNextPlayerID()).getCardsInHand().add(card);
+
+            JButton btn = createButton(game.getNextPlayerID(), game.getPlayer(game.getNextPlayerID()).getCardsInHand().size()-1);
+            btnPlayersCards.add(btn);
+
+            panPlayersCards.get(game.getNextPlayerID()).add(btn);
+
+            game.ChangePlayer();
+
+            panPlayersCards.get(game.getNextPlayerID()).revalidate();
+            panPlayersCards.get(game.getNextPlayerID()).repaint();
+
+            UpdateGameInfoPanel();
             return;
         }
         panGameInfo.remove(btnLastPlayCard);
