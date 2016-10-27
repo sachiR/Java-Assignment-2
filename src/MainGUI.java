@@ -1,5 +1,4 @@
 import javax.swing.*;
-import javax.swing.text.PlainDocument;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
@@ -370,7 +369,7 @@ public class MainGUI extends JFrame {
         }
         //--- Get the Player ID and STCard ID from the btnLastPlayCard ---
         int playerid = -1;
-        int cardid = Integer.parseInt(btnTemp.getName());
+        int cardID = Integer.parseInt(btnTemp.getName());
 
         Object property = btnTemp.getClientProperty("playerID");
         if (property instanceof Integer) {
@@ -378,7 +377,7 @@ public class MainGUI extends JFrame {
         }
 
         //--- Get the Index of the Card in Players Array of Cards ---
-        int index = game.GetIndexByCardIDOfCardInHand(playerid, cardid);
+        int index = game.GetIndexByCardIDOfCardInHand(playerid, cardID);
 
         STCard stcard = game.getPlayer(playerid).getCardsInHand().get(index);
 
