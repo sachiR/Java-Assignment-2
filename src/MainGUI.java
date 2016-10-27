@@ -297,10 +297,13 @@ public class MainGUI extends JFrame {
         btnLastPlayCard.setIcon(game.getLastPlayCard().getCardBottomImage());
         lbls.add(btnLastPlayCard,BorderLayout.CENTER);
 
+
         //panGameInfo.revalidate();
         //panGameInfo.repaint();
 
     }
+
+
 
     private void btnPass_Clicked(ActionEvent e) {
         STCard card = game.GetCardFromDeck();
