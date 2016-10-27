@@ -5,7 +5,7 @@ import java.awt.event.*;
 import java.util.ArrayList;
 
 public class MainGUI extends JFrame {
-
+    JLabel lblWelcome = new JLabel("WELCOME TO THE MINERAL SUPER TRUMP GAME");
     JPanel panelNumberOfPlayers = new JPanel();
     JTextField txtNoOfPlayers = new JTextField(5);
     JPanel panelPlayerNames = new JPanel();
@@ -59,7 +59,7 @@ public class MainGUI extends JFrame {
         super("The Mineral Super Trump Card Game");
         setDefaultCloseOperation(MainGUI.EXIT_ON_CLOSE);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
-
+        con.setBackground(mainColor);
         //setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
 
         setPanelNumberOfPlayers();
@@ -71,7 +71,6 @@ public class MainGUI extends JFrame {
         panelNumberOfPlayers.setLayout(new FlowLayout());
         panelNumberOfPlayers.setBackground(mainColor);
 
-        JLabel lblWelcome = new JLabel("WELCOME TO THE MINERAL SUPER TRUMP GAME");
         lblWelcome.setFont(new java.awt.Font("Serif", Font.BOLD, 48));
         panelNumberOfPlayers.add(lblWelcome);
 
@@ -209,6 +208,7 @@ public class MainGUI extends JFrame {
             panPlayersCards.add(panTemp);
         }
         if (game.getPlayers().size() == 3) {
+            add(lblWelcome, BorderLayout.NORTH);
             panel5.add(panPlayersCards.get(0));
             panel3.add(panPlayersCards.get(1));
             panel4.add(panPlayersCards.get(2));
@@ -216,7 +216,7 @@ public class MainGUI extends JFrame {
             panel5.add(panPlayersCards.get(0));
             panel3.add(panPlayersCards.get(1));
             panel4.add(panPlayersCards.get(2));
-            panel2.add(panPlayersCards.get(3));
+            add(panPlayersCards.get(3), BorderLayout.NORTH);
         } else if (game.getPlayers().size() == 5) {
             panel5.add(panPlayersCards.get(0));
             panel3.add(panPlayersCards.get(1));
