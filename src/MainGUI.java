@@ -219,8 +219,8 @@ public class MainGUI extends JFrame {
         } else if (game.getPlayers().size() == 4){
             panel5.add(panPlayersCards.get(0));
             panel3.add(panPlayersCards.get(1));
-            panel4.add(panPlayersCards.get(2));
-            add(panPlayersCards.get(3), BorderLayout.NORTH);
+            panel4.add(panPlayersCards.get(3));
+            add(panPlayersCards.get(2), BorderLayout.NORTH);
         } else if (game.getPlayers().size() == 5) {
             panel5.add(panPlayersCards.get(0));
             panel3.add(panPlayersCards.get(1));

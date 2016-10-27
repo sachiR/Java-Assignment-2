@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="fixed names">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$6.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI.class" />
+    <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$1.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$10.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$2.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$3.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$4.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$5.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$7.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$8.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$9.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/STCard.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/STCard.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/STDeck.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/STDeck.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/STGame.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/STGame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainGUI.java" afterPath="$PROJECT_DIR$/src/MainGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/STCard.java" afterPath="$PROJECT_DIR$/src/STCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/STDeck.java" afterPath="$PROJECT_DIR$/src/STDeck.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/STGame.java" afterPath="$PROJECT_DIR$/src/STGame.java" />
     </list>
     <ignored path="Java-Assignment-2.iws" />
@@ -32,8 +40,8 @@
       <file leaf-file-name="MainGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="680" column="5" selection-start-line="680" selection-start-column="5" selection-end-line="680" selection-end-column="5" />
+            <state relative-caret-position="208">
+              <caret line="223" column="51" selection-start-line="223" selection-start-column="51" selection-end-line="223" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#ChangeOptionButtonState#0;class#MainGUI#0" expanded="false" />
@@ -52,6 +60,7 @@
                 <element signature="method#createButton#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#UpdatePlayerCardPanel#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#RemoveCardButtonFromHand#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#GameFinish#0;class#MainGUI#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -60,8 +69,8 @@
       <file leaf-file-name="STGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/STGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="153" column="125" selection-start-line="153" selection-start-column="125" selection-end-line="153" selection-end-column="125" />
+            <state relative-caret-position="195">
+              <caret line="162" column="50" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
               <folding>
                 <element signature="method#setPlayers#0;class#STGame#0" expanded="false" />
                 <element signature="method#selectDealer#0;class#STGame#0" expanded="false" />
@@ -69,8 +78,10 @@
                 <element signature="method#dealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
                 <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
                 <element signature="method#getCardFromDeck#0;class#STGame#0" expanded="false" />
+                <element signature="method#playRandomCard#0;class#STGame#0" expanded="false" />
                 <element signature="method#getTrumpCardIfExist#0;class#STGame#0" expanded="false" />
                 <element signature="method#changeTrumpCategory#0;class#STGame#0" expanded="false" />
+                <element signature="method#compareAndReturnACard#0;class#STGame#0" expanded="false" />
                 <element signature="method#validatePlayedCard#0;class#STGame#0" expanded="false" />
                 <element signature="method#afterCardPlay#0;class#STGame#0" expanded="false" />
                 <element signature="method#getTrumpValue#1;class#STGame#0" expanded="false" />
@@ -201,9 +212,9 @@
         <option value="$PROJECT_DIR$/src/MyBorderPanel.java" />
         <option value="$PROJECT_DIR$/src/PanelNumberOfPlayers.java" />
         <option value="$PROJECT_DIR$/src/STPlayer.java" />
-        <option value="$PROJECT_DIR$/src/MainGUI.java" />
         <option value="$PROJECT_DIR$/src/STDeck.java" />
         <option value="$PROJECT_DIR$/src/STCard.java" />
+        <option value="$PROJECT_DIR$/src/MainGUI.java" />
         <option value="$PROJECT_DIR$/src/STGame.java" />
       </list>
     </option>
@@ -926,7 +937,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477536508534</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Highlightes the current player">
+      <created>1477574490827</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1477574490827</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -997,7 +1015,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed player View" />
     <MESSAGE value="game.main" />
     <MESSAGE value="get player name" />
     <MESSAGE value="Player names return" />
@@ -1022,7 +1039,8 @@
     <MESSAGE value="card Change" />
     <MESSAGE value="fixed messages" />
     <MESSAGE value="fixed names" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed names" />
+    <MESSAGE value="Highlightes the current player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Highlightes the current player" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1118,32 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="680" column="5" selection-start-line="680" selection-start-column="5" selection-end-line="680" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ChangeOptionButtonState#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#CreateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#UpdateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#btnPass_Clicked#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#btnPlayNextCard_Clicked#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#btnClick#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#CreateTrumpOptionGroup#0;class#MainGUI#0" expanded="false" />
-            <element signature="class#19382:19894" expanded="false" />
-            <element signature="method#UpdateTrumpSelectedOption#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#IsTrumpSelected#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#AddPlayers#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#PrintPlayers#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#PrintPlayersCardsInHand#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#createButton#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#UpdatePlayerCardPanel#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#RemoveCardButtonFromHand#0;class#MainGUI#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/STDeck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1191,10 +1183,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="223" column="51" selection-start-line="223" selection-start-column="51" selection-end-line="223" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ChangeOptionButtonState#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#CreateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#UpdateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#btnPass_Clicked#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#btnPlayNextCard_Clicked#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#btnClick#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#CreateTrumpOptionGroup#0;class#MainGUI#0" expanded="false" />
+            <element signature="class#19382:19894" expanded="false" />
+            <element signature="method#UpdateTrumpSelectedOption#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#IsTrumpSelected#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#AddPlayers#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#PrintPlayers#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#PrintPlayersCardsInHand#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#createButton#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#UpdatePlayerCardPanel#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#RemoveCardButtonFromHand#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#GameFinish#0;class#MainGUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/STGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="153" column="125" selection-start-line="153" selection-start-column="125" selection-end-line="153" selection-end-column="125" />
+        <state relative-caret-position="195">
+          <caret line="162" column="50" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
           <folding>
             <element signature="method#setPlayers#0;class#STGame#0" expanded="false" />
             <element signature="method#selectDealer#0;class#STGame#0" expanded="false" />
@@ -1202,8 +1221,10 @@
             <element signature="method#dealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
             <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
             <element signature="method#getCardFromDeck#0;class#STGame#0" expanded="false" />
+            <element signature="method#playRandomCard#0;class#STGame#0" expanded="false" />
             <element signature="method#getTrumpCardIfExist#0;class#STGame#0" expanded="false" />
             <element signature="method#changeTrumpCategory#0;class#STGame#0" expanded="false" />
+            <element signature="method#compareAndReturnACard#0;class#STGame#0" expanded="false" />
             <element signature="method#validatePlayedCard#0;class#STGame#0" expanded="false" />
             <element signature="method#afterCardPlay#0;class#STGame#0" expanded="false" />
             <element signature="method#getTrumpValue#1;class#STGame#0" expanded="false" />

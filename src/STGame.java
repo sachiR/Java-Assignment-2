@@ -171,7 +171,7 @@ public class STGame {
             double val1 = getTrumpValue(card);
 
             if(val1 > this.trumpValue){
-                JOptionPane.showMessageDialog(null, "Last card Value is = " + this.trumpValue + " Selected Card Value is" + val1 , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Last card Value is = " + this.trumpValue + " Selected Card Value is " + val1 , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                 return true;
             }
         }
