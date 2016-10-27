@@ -33,12 +33,15 @@ public class MainGUI extends JFrame {
 
     STGame game;
 
+    ButtonGroup group = new ButtonGroup();
+
+
     JLabel lblDealerName = new JLabel();
     JLabel lblNextPlayerName = new JLabel();
     JLabel lblTrumpCategory = new JLabel();
     JLabel lblTrumpValue = new JLabel();
     JButton btnLastPlayCard = new JButton();
-    JButton btnPlayNextCard = new JButton("Play Next Card");
+    JButton btnPlayNextCard = new JButton("Play Next Player");
     JButton btnPass = new JButton("Pass");
 
     JRadioButton optTrumpCat01 = new JRadioButton(STCard.enumCategory.Hardness.toString());
@@ -47,7 +50,8 @@ public class MainGUI extends JFrame {
     JRadioButton optTrumpCat04 = new JRadioButton(STCard.enumCategory.Crustal_Abundance.toString());
     JRadioButton optTrumpCat05 = new JRadioButton(STCard.enumCategory.Economic_Value.toString());
 
-    Color mainColor = new Color(0, 153, 0);
+    Color mainColor = new Color(0, 156, 0);
+    Color nextPlayerColor = new Color(50, 255, 50);
     Font mainFont = new Font("Arial", Font.ITALIC, 22);
 
     public static void main(String args[]){
@@ -134,8 +138,8 @@ public class MainGUI extends JFrame {
     private void NewGame() {
         game = new STGame();
         game.setPlayers(this.players);
-        game.getDeck().ShuffleTheDeck();
-        game.DealCardsToEachPlayer();
+        game.getDeck().shuffleTheDeck();
+        game.dealCardsToEachPlayer();
 
         north.setBackground(mainColor);
         north.setPreferredSize(new Dimension(80,80));
@@ -191,6 +195,7 @@ public class MainGUI extends JFrame {
 
         CreateGameInfoPanel();
         CreateCardPanelForEachPlayer();
+        ChangeBackgroundColorOfNextPlayer();
     }
 
     private void CreateCardPanelForEachPlayer(){
@@ -234,6 +239,46 @@ public class MainGUI extends JFrame {
         }
     }
 
+    private void ChangeBackgroundColorOfNextPlayer(){
+
+        if(game.getLastPlayerID() >= 0){
+            panPlayersCards.get(game.getLastPlayerID()).setBackground(mainColor);
+        }
+        panPlayersCards.get(game.getNextPlayerID()).setBackground(nextPlayerColor);
+        lblNextPlayerName.setBackground(nextPlayerColor);
+
+        boolean setOptVal = false;
+        boolean setBtnVal = true;
+
+        if(game.getNextPlayerID() == 0 ) {
+            btnPlayNextCard.setEnabled(false);
+
+            panPlayersCards.get(0).setEnabled(true);
+
+            if(game.getLastPlayerID() < 0 ) {
+                setOptVal = true;
+            }
+
+        } else {
+            setBtnVal = false;
+
+            btnPlayNextCard.setEnabled(true);
+            panPlayersCards.get(0).setEnabled(false);
+        }
+
+        for (Component c : panPlayersCards.get(0).getComponents()) {
+            c.setEnabled(setBtnVal);
+        }
+
+        ChangeOptionButtonState(setOptVal);
+    }
+    private void ChangeOptionButtonState(boolean val){
+        optTrumpCat01.setEnabled(val);
+        optTrumpCat02.setEnabled(val);
+        optTrumpCat03.setEnabled(val);
+        optTrumpCat04.setEnabled(val);
+        optTrumpCat05.setEnabled(val);
+    }
     private void CreateGameInfoPanel(){
         //panGameInfo.setLayout(new BoxLayout(panGameInfo, BoxLayout.LINE_AXIS));
         panGameInfo.setBackground(mainColor);
@@ -285,7 +330,9 @@ public class MainGUI extends JFrame {
 
     private void UpdateGameInfoPanel(){
 
+        //ChangeBackgroundColorOfNextPlayer();
         UpdateTrumpSelectedOption();
+        ChangeBackgroundColorOfNextPlayer();
 
         lblNextPlayerName.setText("Next Player : " + game.getPlayer(game.getNextPlayerID()).getPlayerName()+ "  |");
         lblTrumpCategory.setText("Trump Category : " + game.getTrumpCategory()+ "  |");
@@ -294,13 +341,10 @@ public class MainGUI extends JFrame {
         btnLastPlayCard.setIcon(game.getLastPlayCard().getCardBottomImage());
         lbls.add(btnLastPlayCard,BorderLayout.CENTER);
 
-        //panGameInfo.revalidate();
-        //panGameInfo.repaint();
-
     }
 
     private void btnPass_Clicked(ActionEvent e) {
-        STCard card = game.GetCardFromDeck();
+        STCard card = game.getCardFromDeck();
         //int npid
         game.getPlayer(0).getCardsInHand().add(card);
 
@@ -309,7 +353,7 @@ public class MainGUI extends JFrame {
 
         panPlayersCards.get(0).add(btn);
 
-        game.ChangePlayer();
+        game.changePlayer();
 
         panPlayersCards.get(0).revalidate();
         panPlayersCards.get(0).repaint();
@@ -319,9 +363,11 @@ public class MainGUI extends JFrame {
 
     private void btnPlayNextCard_Clicked(ActionEvent e) {
 
-        STCard stcard = game.PlayRandomCard(game.getNextPlayerID());
+        ChangeOptionButtonState(true);
+
+        STCard stcard = game.playRandomCard(game.getNextPlayerID());
         if(stcard == null){
-            STCard card = game.GetCardFromDeck();
+            STCard card = game.getCardFromDeck();
             //int npid
             game.getPlayer(game.getNextPlayerID()).getCardsInHand().add(card);
 
@@ -330,7 +376,7 @@ public class MainGUI extends JFrame {
 
             panPlayersCards.get(game.getNextPlayerID()).add(btn);
 
-            game.ChangePlayer();
+            game.changePlayer();
 
             panPlayersCards.get(game.getNextPlayerID()).revalidate();
             panPlayersCards.get(game.getNextPlayerID()).repaint();
@@ -374,14 +420,14 @@ public class MainGUI extends JFrame {
         }
 
         //--- Get the Index of the Card in Players Array of Cards ---
-        int index = game.GetIndexByCardIDOfCardInHand(playerid, cardID);
+        int index = game.getIndexByCardIDOfCardInHand(playerid, cardID);
 
         STCard stcard = game.getPlayer(playerid).getCardsInHand().get(index);
 
         if(game.getLastPlayCard() == null){
             ButtonClickOnGame(stcard);
         } else {
-            if(game.ValidatePlayedCard(stcard)){
+            if(game.validatePlayedCard(stcard)){
 
             } else {
                 JOptionPane.showMessageDialog(null, "Selected Card is Not Valid, Please Select Higher Value in Trump or Change Trump Category " , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
@@ -478,7 +524,6 @@ public class MainGUI extends JFrame {
         });
 
         //Group the radio buttons.
-        ButtonGroup group = new ButtonGroup();
 
         group.add(optTrumpCat01);
         group.add(optTrumpCat02);
@@ -572,8 +617,12 @@ public class MainGUI extends JFrame {
                 }
             });
         } else {
-            button.setSelected(false);
-            button.setIcon(game.getPlayer(playerID).getCardsInHand().get(cardID).getCardTopImage());
+            try{
+                button.setSelected(false);
+                button.setIcon(game.getPlayer(playerID).getCardsInHand().get(cardID).getCardTopImage());
+            } catch (Exception ex){
+
+            }
             //button.setIcon(new ImageIcon(((new ImageIcon("images\\Slide66.jpg")).getImage()).getScaledInstance(CARD_WIDTH, CARD_HEIGHT, java.awt.Image.SCALE_SMOOTH)));
         }
 
@@ -606,11 +655,28 @@ public class MainGUI extends JFrame {
 
     private void RemoveCardButtonFromHand(STCard selectedCard ){
 
-        game.AfterCardPlay(selectedCard);
+        game.afterCardPlay(selectedCard);
 
+        //panPlayersCards.get(game.getLastPlayerID().size)
         panPlayersCards.get(game.getLastPlayerID()).remove(btnLastPlayCard);
+
+        int i = 0;
+        for (Component c : panPlayersCards.get(game.getLastPlayerID()).getComponents()) {
+            i++;
+        }
+
+        if(i == 0){
+            GameFinish();
+        }
         panPlayersCards.get(game.getLastPlayerID()).revalidate();
         panPlayersCards.get(game.getLastPlayerID()).repaint();
+
+
+    }
+
+    private void GameFinish() {
+        JOptionPane.showMessageDialog(null,"Congratulations you won!!");
+        new MainGUI();
 
     }
 }

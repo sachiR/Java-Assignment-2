@@ -24,10 +24,10 @@ public class STDeck {
     private int cardID = 0;
 
     public STDeck() {
-        ReadXML("MstCards_151021.xml");
+        readXML("MstCards_151021.xml");
     }
 
-    public void ShuffleTheDeck() {
+    public void shuffleTheDeck() {
         Random rnd = new Random();
         for(int i = 0; i< NUMBER_OF_TIMES_TO_SHUFFLE; i++)
         {
@@ -38,7 +38,7 @@ public class STDeck {
         }
     }
 
-    private void ReadXML(String fileName){
+    private void readXML(String fileName){
 
         HashMap<String,ArrayList<String>> card;
         try {
@@ -59,7 +59,7 @@ public class STDeck {
                         card = getCardDetails(element);
                         if(card.size()> 0){
 
-                            AddToDeck(card);
+                            addToDeck(card);
                         }
                     }
                 }
@@ -123,7 +123,7 @@ public class STDeck {
         return tempCard;
     }
 
-    private void AddToDeck(HashMap<String,ArrayList<String>> tempCard){
+    private void addToDeck(HashMap<String,ArrayList<String>> tempCard){
         STCard card;  // = new STCard();
         ArrayList<String> temp = new ArrayList<>();
 

@@ -16,8 +16,8 @@ public class STCard {
         Trump
     }
 
-    private static final int CARD_WIDTH = 100;
-    private static final int CARD_HEIGHT = 140;
+    private static final int CARD_WIDTH = 90;
+    private static final int CARD_HEIGHT = 180;
 
     private HashMap<Integer, String> OneCleavage = new HashMap<Integer, String>() {
         {   put(0,"none");

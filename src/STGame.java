@@ -31,7 +31,7 @@ public class STGame {
 
     public void setPlayers(ArrayList<STPlayer> players){
         this.players = players;
-        this.dealerID = SelectDealer();
+        this.dealerID = selectDealer();
         this.nextPlayerID = calculateNextPlayerID(this.dealerID);
     }
 
@@ -49,7 +49,7 @@ public class STGame {
 
     public void setLastPlayCard(STCard lastPlayCard){this.lastPlayCard = lastPlayCard;}
 
-    private int SelectDealer() {
+    private int selectDealer() {
         Random rnd = new Random();
         return rnd.nextInt(this.players.size());
     }
@@ -62,12 +62,12 @@ public class STGame {
 
     public int getLastPlayerID(){return this.lastPlayerID;}
 
-    public void ChangePlayer(){
+    public void changePlayer(){
         lastPlayerID = nextPlayerID;
         nextPlayerID = calculateNextPlayerID(nextPlayerID);
     }
 
-    public void DealCardsToEachPlayer(){
+    public void dealCardsToEachPlayer(){
         int p  = -1 ;
         for(int j = 0; j < this.players.size(); j++)
         {
@@ -91,13 +91,13 @@ public class STGame {
         return p;
     }
 
-    public STCard GetCardFromDeck(){
+    public STCard getCardFromDeck(){
         STCard card = this.deck.getCard(0);
         this.deck.getCards().remove(0);
         return card;
     }
 
-    public STCard PlayRandomCard(int playerid) {
+    public STCard playRandomCard(int playerid) {
         STCard cardToReturn = null;
         if(this.lastPlayCard == null){
             Random rnd = new Random();
@@ -113,18 +113,18 @@ public class STGame {
                 }
             }
         } else {
-            cardToReturn = CompareAndReturnACard();
+            cardToReturn = compareAndReturnACard();
             if(cardToReturn == null){
-                cardToReturn = GetTrumpCardIfExist();
+                cardToReturn = getTrumpCardIfExist();
                 if(cardToReturn != null){
-                    ChangeTrumpCategory(cardToReturn);
+                    changeTrumpCategory(cardToReturn);
                 }
             }
         }
         return cardToReturn;
     }
 
-    private STCard GetTrumpCardIfExist() {
+    private STCard getTrumpCardIfExist() {
         STCard cardToReturn = null;
 
         for (STCard cd : this.getPlayer(nextPlayerID).getCardsInHand()) {
@@ -136,7 +136,7 @@ public class STGame {
         return cardToReturn;
     }
 
-    private boolean ChangeTrumpCategory(STCard card) {
+    private boolean changeTrumpCategory(STCard card) {
         this.trumpCategory = card.getTrumpCategoryEnum();
         this.trumpValue =0.0;
 
@@ -145,13 +145,13 @@ public class STGame {
         return true;
     }
 
-    public STCard CompareAndReturnACard(){
+    public STCard compareAndReturnACard(){
         STCard cardToReturn = null;
 
         for (STCard cd : this.getPlayer(nextPlayerID).getCardsInHand()) {
-            double val1 = GetTrumpValue(cd);
+            double val1 = getTrumpValue(cd);
             if(val1 > this.trumpValue){
-                JOptionPane.showMessageDialog(null, "Last card Value is " + this.trumpValueInText + " Selected Card Value is" + GetTrumpValueInText(cd) , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Last card Value is " + this.trumpValueInText + " Selected Card Value is " + getTrumpValueInText(cd) , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                 cardToReturn = cd;
                 break;
             }
@@ -160,15 +160,15 @@ public class STGame {
         return cardToReturn;
     }
 
-    public boolean ValidatePlayedCard(STCard card){
+    public boolean validatePlayedCard(STCard card){
         if(this.lastPlayCard == null){return true;}
 
         if(card.getCardType() == STCard.enumCardType.Trump){
-            ChangeTrumpCategory(card);
+            changeTrumpCategory(card);
             return true;
 
         } else {
-            double val1 = GetTrumpValue(card);
+            double val1 = getTrumpValue(card);
 
             if(val1 > this.trumpValue){
                 JOptionPane.showMessageDialog(null, "Last card Value is = " + this.trumpValue + " Selected Card Value is" + val1 , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
@@ -178,15 +178,15 @@ public class STGame {
         return false;
     }
 
-    public boolean AfterCardPlay(STCard cardPlaied){
+    public boolean afterCardPlay(STCard cardPlaied){
         try{
-            int index = GetIndexByCardIDOfCardInHand(nextPlayerID, cardPlaied.getCardID());
+            int index = getIndexByCardIDOfCardInHand(nextPlayerID, cardPlaied.getCardID());
             this.getPlayer(nextPlayerID).getCardsInHand().remove(index);
-            this.ChangePlayer();
+            this.changePlayer();
             this.lastPlayCard = cardPlaied;
 
-            this.trumpValue = GetTrumpValue(cardPlaied);
-            this.trumpValueInText = GetTrumpValueInText(cardPlaied);
+            this.trumpValue = getTrumpValue(cardPlaied);
+            this.trumpValueInText = getTrumpValueInText(cardPlaied);
 
             JOptionPane.showMessageDialog(null, "Selected Card ID is  " + index + " And Card is" + cardPlaied.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
             return true;
@@ -198,7 +198,7 @@ public class STGame {
         return false;
     }
 
-    private double GetTrumpValue(STCard cardPlaied ){
+    private double getTrumpValue(STCard cardPlaied ){
         double retval = 0.0;
         switch (this.trumpCategory.ordinal()){
             case 0:
@@ -220,7 +220,7 @@ public class STGame {
         return retval;
     }
 
-    private String GetTrumpValueInText(STCard cardPlayed ){
+    private String getTrumpValueInText(STCard cardPlayed ){
         String retval = null;
 
         switch (this.trumpCategory.ordinal()){
@@ -243,7 +243,7 @@ public class STGame {
         return retval;
     }
 
-    public int GetIndexByCardIDOfCardInHand(int playerID, int cardID){
+    public int getIndexByCardIDOfCardInHand(int playerID, int cardID){
         for(int i = 0; i<this.getPlayer(playerID).getCardsInHand().size(); i++){
             if(this.getPlayer(playerID).getCardsInHand().get(i).getCardID() == cardID ){
                 return i;
