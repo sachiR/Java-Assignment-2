@@ -186,7 +186,7 @@ public class MainGUI extends JFrame {
         centre.add(panel6);
 
         panel7.setBackground(mainColor);
-        panel7.setLayout(new GridLayout());
+        panel7.setLayout(new FlowLayout());
         panel6.add(panel7, BorderLayout.SOUTH);
 
         CreateGameInfoPanel();
@@ -254,24 +254,22 @@ public class MainGUI extends JFrame {
         lbls.add(lblTrumpCategory);
         lbls.add(lblTrumpValue);
 
-        //btnLastPlayCard.setIcon(new STCard().getCardTopImage());
-
         CreateTrumpOptionGroup();
 
         btnPlayNextCard.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                btnPlayNextCard_Clicked(e);
-            }
-        });
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    btnPlayNextCard_Clicked(e);
+                }
+            });
         panel7.add(btnPlayNextCard);
 
         btnPass.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                btnPass_Clicked(e);
-            }
-        });
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    btnPass_Clicked(e);
+                }
+            });
         panel7.add(btnPass);
 
         //JButton b = new JButton();
@@ -295,7 +293,6 @@ public class MainGUI extends JFrame {
 
         btnLastPlayCard.setIcon(game.getLastPlayCard().getCardBottomImage());
         lbls.add(btnLastPlayCard,BorderLayout.CENTER);
-
 
         //panGameInfo.revalidate();
         //panGameInfo.repaint();
@@ -443,7 +440,7 @@ public class MainGUI extends JFrame {
         optTrumpCat02.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 if(e.getStateChange()==1){
-                    JOptionPane.showMessageDialog(null, "Changed Trup Category to " + STCard.enumCategory.Specific_Gravity.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Changed Trump Category to " + STCard.enumCategory.Specific_Gravity.toString() , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                     game.setTrumpCategory(STCard.enumCategory.Specific_Gravity);
                     lblTrumpCategory.setText("Trump Category : " + game.getTrumpCategory());
                 }
@@ -565,6 +562,7 @@ public class MainGUI extends JFrame {
         JButton button = new JButton();
         if(playerID == 0) {
             button.setIcon(game.getPlayer(playerID).getCardsInHand().get(cardID).getCardBottomImage());
+            //button.setToolTipText(String.valueOf(game.getPlayer(0).getCardsInHand()));
 
             button.setFocusable(false);
             button.addActionListener(new ActionListener() {
