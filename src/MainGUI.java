@@ -272,6 +272,7 @@ public class MainGUI extends JFrame {
 
         ChangeOptionButtonState(setOptVal);
     }
+
     private void ChangeOptionButtonState(boolean val){
         optTrumpCat01.setEnabled(val);
         optTrumpCat02.setEnabled(val);
@@ -279,6 +280,7 @@ public class MainGUI extends JFrame {
         optTrumpCat04.setEnabled(val);
         optTrumpCat05.setEnabled(val);
     }
+
     private void CreateGameInfoPanel(){
         //panGameInfo.setLayout(new BoxLayout(panGameInfo, BoxLayout.LINE_AXIS));
         panGameInfo.setBackground(mainColor);
@@ -346,6 +348,9 @@ public class MainGUI extends JFrame {
     private void btnPass_Clicked(ActionEvent e) {
         STCard card = game.getCardFromDeck();
         //int npid
+        if (card == null){
+            JOptionPane.showMessageDialog(null, "Sorry no cards avaliable in the deck. Please change the trump category");
+        }
         game.getPlayer(0).getCardsInHand().add(card);
 
         JButton btn = createButton(game.getNextPlayerID(), game.getPlayer(0).getCardsInHand().size()-1);
@@ -369,6 +374,9 @@ public class MainGUI extends JFrame {
         if(stcard == null){
             STCard card = game.getCardFromDeck();
             //int npid
+            if (card == null){
+                JOptionPane.showMessageDialog(null, "Sorry no cards available in the deck. Please change the trump category");
+            }
             game.getPlayer(game.getNextPlayerID()).getCardsInHand().add(card);
 
             JButton btn = createButton(game.getNextPlayerID(), game.getPlayer(game.getNextPlayerID()).getCardsInHand().size()-1);

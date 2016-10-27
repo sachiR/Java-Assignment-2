@@ -151,7 +151,7 @@ public class STGame {
         for (STCard cd : this.getPlayer(nextPlayerID).getCardsInHand()) {
             double val1 = getTrumpValue(cd);
             if(val1 > this.trumpValue){
-                JOptionPane.showMessageDialog(null, "Last card Value is " + this.trumpValueInText + " Selected Card Value is " + getTrumpValueInText(cd) , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Last card Value is " + this.trumpValueInText + ", Selected Card Value is " + getTrumpValueInText(cd) , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                 cardToReturn = cd;
                 break;
             }
@@ -171,7 +171,7 @@ public class STGame {
             double val1 = getTrumpValue(card);
 
             if(val1 > this.trumpValue){
-                JOptionPane.showMessageDialog(null, "Last card Value is = " + this.trumpValue + " Selected Card Value is " + val1 , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Last card Value is = " + this.trumpValue + ", Selected Card Value is " + val1 , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                 return true;
             }
         }
@@ -251,4 +251,5 @@ public class STGame {
         }
         return -1;
     }
+
 }

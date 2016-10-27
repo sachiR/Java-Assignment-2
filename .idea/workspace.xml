@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$1.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$10.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$2.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$3.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$4.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$5.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$7.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$8.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$9.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/STCard.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/STCard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/STDeck.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/STDeck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/STGame.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/STGame.class" />
+    <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="when no more cards are available">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI.class" afterPath="$PROJECT_DIR$/out/production/Java-Assignment-2/MainGUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainGUI.java" afterPath="$PROJECT_DIR$/src/MainGUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/STGame.java" afterPath="$PROJECT_DIR$/src/STGame.java" />
@@ -37,21 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainGUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="223" column="51" selection-start-line="223" selection-start-column="51" selection-end-line="223" selection-end-column="51" />
+            <state relative-caret-position="202">
+              <caret line="376" column="30" selection-start-line="376" selection-start-column="30" selection-end-line="376" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#setPanelNumberOfPlayers#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#setPanelPlayerNames#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#NewGame#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#CreateCardPanelForEachPlayer#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#ChangeBackgroundColorOfNextPlayer#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#ChangeOptionButtonState#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#CreateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
+                <element signature="class#11290:11475" expanded="false" />
+                <element signature="class#11554:11731" expanded="false" />
+                <element signature="e#11772#11800#0" expanded="false" />
+                <element signature="e#11968#12014#0" expanded="false" />
                 <element signature="method#UpdateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#btnPass_Clicked#0;class#MainGUI#0" expanded="false" />
-                <element signature="method#btnPlayNextCard_Clicked#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#btnClick#0;class#MainGUI#0" expanded="false" />
+                <element signature="method#ButtonClickOnGame#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#CreateTrumpOptionGroup#0;class#MainGUI#0" expanded="false" />
-                <element signature="class#19382:19894" expanded="false" />
+                <element signature="class#19716:20228" expanded="false" />
                 <element signature="method#UpdateTrumpSelectedOption#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#IsTrumpSelected#0;class#MainGUI#0" expanded="false" />
                 <element signature="method#AddPlayers#0;class#MainGUI#0" expanded="false" />
@@ -66,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STGame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="STGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/STGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="162" column="50" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
+            <state relative-caret-position="291">
+              <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
               <folding>
                 <element signature="method#setPlayers#0;class#STGame#0" expanded="false" />
                 <element signature="method#selectDealer#0;class#STGame#0" expanded="false" />
@@ -120,8 +119,8 @@
       <file leaf-file-name="STCard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/STCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+            <state relative-caret-position="138">
+              <caret line="262" column="24" selection-start-line="262" selection-start-column="24" selection-end-line="262" selection-end-column="24" />
               <folding>
                 <element signature="class#enumCategory#0;class#STCard#0" expanded="false" />
                 <element signature="class#enumCardType#0;class#STCard#0" expanded="false" />
@@ -137,7 +136,6 @@
                 <element signature="method#getSpecificGravityToNum#0;class#STCard#0" expanded="false" />
                 <element signature="method#getCrustalAbundanceToNum#0;class#STCard#0" expanded="false" />
                 <element signature="method#getEconomicValueToNum#0;class#STCard#0" expanded="false" />
-                <element signature="method#getTrumpCategoryEnum#0;class#STCard#0" expanded="false" />
                 <element signature="method#toString#0;class#STCard#0" expanded="false" />
                 <element signature="method#getKeyByValue#0;class#STCard#0" expanded="false" />
               </folding>
@@ -214,8 +212,8 @@
         <option value="$PROJECT_DIR$/src/STPlayer.java" />
         <option value="$PROJECT_DIR$/src/STDeck.java" />
         <option value="$PROJECT_DIR$/src/STCard.java" />
-        <option value="$PROJECT_DIR$/src/MainGUI.java" />
         <option value="$PROJECT_DIR$/src/STGame.java" />
+        <option value="$PROJECT_DIR$/src/MainGUI.java" />
       </list>
     </option>
   </component>
@@ -944,7 +942,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477574490827</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="added Space">
+      <created>1477574772868</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1477574772868</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -958,8 +963,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921136" sideWeight="0.50292826" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26182964" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26182964" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1015,7 +1020,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="game.main" />
     <MESSAGE value="get player name" />
     <MESSAGE value="Player names return" />
     <MESSAGE value="Printing the users cards in hand" />
@@ -1040,7 +1044,8 @@
     <MESSAGE value="fixed messages" />
     <MESSAGE value="fixed names" />
     <MESSAGE value="Highlightes the current player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Highlightes the current player" />
+    <MESSAGE value="added Space" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Space" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1159,8 +1164,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/STCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <state relative-caret-position="138">
+          <caret line="262" column="24" selection-start-line="262" selection-start-column="24" selection-end-line="262" selection-end-column="24" />
           <folding>
             <element signature="class#enumCategory#0;class#STCard#0" expanded="false" />
             <element signature="class#enumCardType#0;class#STCard#0" expanded="false" />
@@ -1176,44 +1181,16 @@
             <element signature="method#getSpecificGravityToNum#0;class#STCard#0" expanded="false" />
             <element signature="method#getCrustalAbundanceToNum#0;class#STCard#0" expanded="false" />
             <element signature="method#getEconomicValueToNum#0;class#STCard#0" expanded="false" />
-            <element signature="method#getTrumpCategoryEnum#0;class#STCard#0" expanded="false" />
             <element signature="method#toString#0;class#STCard#0" expanded="false" />
             <element signature="method#getKeyByValue#0;class#STCard#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="223" column="51" selection-start-line="223" selection-start-column="51" selection-end-line="223" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ChangeOptionButtonState#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#CreateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#UpdateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#btnPass_Clicked#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#btnPlayNextCard_Clicked#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#btnClick#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#CreateTrumpOptionGroup#0;class#MainGUI#0" expanded="false" />
-            <element signature="class#19382:19894" expanded="false" />
-            <element signature="method#UpdateTrumpSelectedOption#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#IsTrumpSelected#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#AddPlayers#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#PrintPlayers#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#PrintPlayersCardsInHand#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#createButton#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#UpdatePlayerCardPanel#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#RemoveCardButtonFromHand#0;class#MainGUI#0" expanded="false" />
-            <element signature="method#GameFinish#0;class#MainGUI#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/STGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="162" column="50" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
+        <state relative-caret-position="291">
+          <caret line="253" column="0" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
           <folding>
             <element signature="method#setPlayers#0;class#STGame#0" expanded="false" />
             <element signature="method#selectDealer#0;class#STGame#0" expanded="false" />
@@ -1230,6 +1207,43 @@
             <element signature="method#getTrumpValue#1;class#STGame#0" expanded="false" />
             <element signature="method#getTrumpValueInText#1;class#STGame#0" expanded="false" />
             <element signature="method#getIndexByCardIDOfCardInHand#0;class#STGame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="376" column="30" selection-start-line="376" selection-start-column="30" selection-end-line="376" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MainGUI#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#setPanelNumberOfPlayers#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#setPanelPlayerNames#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#NewGame#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#CreateCardPanelForEachPlayer#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#ChangeBackgroundColorOfNextPlayer#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#ChangeOptionButtonState#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#CreateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
+            <element signature="class#11290:11475" expanded="false" />
+            <element signature="class#11554:11731" expanded="false" />
+            <element signature="e#11772#11800#0" expanded="false" />
+            <element signature="e#11968#12014#0" expanded="false" />
+            <element signature="method#UpdateGameInfoPanel#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#btnPass_Clicked#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#btnClick#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#ButtonClickOnGame#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#CreateTrumpOptionGroup#0;class#MainGUI#0" expanded="false" />
+            <element signature="class#19716:20228" expanded="false" />
+            <element signature="method#UpdateTrumpSelectedOption#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#IsTrumpSelected#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#AddPlayers#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#PrintPlayers#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#PrintPlayersCardsInHand#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#createButton#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#UpdatePlayerCardPanel#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#RemoveCardButtonFromHand#0;class#MainGUI#0" expanded="false" />
+            <element signature="method#GameFinish#0;class#MainGUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
