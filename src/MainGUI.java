@@ -341,7 +341,7 @@ public class MainGUI extends JFrame {
 
             UpdateGameInfoPanel();
         }
-        panGameInfo.remove(btnLastPlayCard);
+        lbls.remove(btnLastPlayCard);
         ButtonClickOnGame(stcard);
 
         RemoveCardButtonFromHand(stcard);
@@ -369,18 +369,18 @@ public class MainGUI extends JFrame {
             }
         }
         //--- Get the Player ID and STCard ID from the btnLastPlayCard ---
-        int playerID = -1;
-        int cardID = Integer.parseInt(btnTemp.getName());
+        int playerid = -1;
+        int cardid = Integer.parseInt(btnTemp.getName());
 
         Object property = btnTemp.getClientProperty("playerID");
         if (property instanceof Integer) {
-            playerID = ((Integer)property);
+            playerid = ((Integer)property);
         }
 
         //--- Get the Index of the Card in Players Array of Cards ---
-        int index = game.GetIndexByCardIDOfCardInHand(playerID, cardID);
+        int index = game.GetIndexByCardIDOfCardInHand(playerid, cardid);
 
-        STCard stcard = game.getPlayer(playerID).getCardsInHand().get(index);
+        STCard stcard = game.getPlayer(playerid).getCardsInHand().get(index);
 
         if(game.getLastPlayCard() == null){
             ButtonClickOnGame(stcard);
@@ -390,9 +390,9 @@ public class MainGUI extends JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Selected Card is Not Valid, Please Select Higher Value in Trump or Change Trump Category " , "InfoBox: " , JOptionPane.INFORMATION_MESSAGE);
                 return;
-            };
+            }
         }
-        panGameInfo.remove(btnLastPlayCard);
+        lbls.remove(btnLastPlayCard);
 
         btnLastPlayCard = btnTemp;
         RemoveCardButtonFromHand(stcard);
