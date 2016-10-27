@@ -292,7 +292,7 @@ public class MainGUI extends JFrame {
 
         lblNextPlayerName.setText("Next Player : " + game.getPlayer(game.getNextPlayerID()).getPlayerName()+ "  |");
         lblTrumpCategory.setText("Trump Category : " + game.getTrumpCategory()+ "  |");
-        lblTrumpValue.setText("Max Value : " + game.getTrumpValue()+ "  |");
+        lblTrumpValue.setText("Max Value : " + game.getTrumpValueInText()+ "  |");
 
         btnLastPlayCard.setIcon(game.getLastPlayCard().getCardBottomImage());
         lbls.add(btnLastPlayCard,BorderLayout.CENTER);
@@ -302,8 +302,6 @@ public class MainGUI extends JFrame {
         //panGameInfo.repaint();
 
     }
-
-
 
     private void btnPass_Clicked(ActionEvent e) {
         STCard card = game.GetCardFromDeck();
@@ -326,7 +324,7 @@ public class MainGUI extends JFrame {
     private void btnPlayNextCard_Clicked(ActionEvent e) {
 
         STCard stcard = game.PlayRandomCard(game.getNextPlayerID());
-        if(stcard == null || game.getNextPlayerID() != 0 ){
+        if(stcard == null){
             STCard card = game.GetCardFromDeck();
             //int npid
             game.getPlayer(game.getNextPlayerID()).getCardsInHand().add(card);
@@ -342,11 +340,9 @@ public class MainGUI extends JFrame {
             panPlayersCards.get(game.getNextPlayerID()).repaint();
 
             UpdateGameInfoPanel();
-            return;
         }
         panGameInfo.remove(btnLastPlayCard);
         ButtonClickOnGame(stcard);
-
 
         RemoveCardButtonFromHand(stcard);
         UpdateGameInfoPanel();
