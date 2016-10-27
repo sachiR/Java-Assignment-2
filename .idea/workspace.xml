@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="996bb7cc-75b7-4b84-a88b-a20cd2ea1817" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainGUI.java" afterPath="$PROJECT_DIR$/src/MainGUI.java" />
     </list>
     <ignored path="Java-Assignment-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,12 +62,25 @@
       <file leaf-file-name="STGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/STGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="177" column="68" selection-start-line="177" selection-start-column="68" selection-end-line="177" selection-end-column="68" />
+            <state relative-caret-position="204">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding>
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#2240#2248#0" expanded="true" />
+                <element signature="method#setPlayers#0;class#STGame#0" expanded="false" />
+                <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
+                <element signature="method#ChangePlayer#0;class#STGame#0" expanded="false" />
+                <element signature="method#DealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
+                <element signature="e#2218#2226#0" expanded="true" />
+                <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
+                <element signature="method#GetCardFromDeck#0;class#STGame#0" expanded="false" />
+                <element signature="method#PlayRandomCard#0;class#STGame#0" expanded="false" />
+                <element signature="method#GetTrumpCardIfExist#0;class#STGame#0" expanded="false" />
+                <element signature="method#ChangeTrumpCategory#0;class#STGame#0" expanded="false" />
+                <element signature="method#CompareAndReturnACard#0;class#STGame#0" expanded="false" />
+                <element signature="method#ValidatePlayedCard#0;class#STGame#0" expanded="false" />
+                <element signature="method#AfterCardPlay#0;class#STGame#0" expanded="false" />
+                <element signature="method#GetTrumpValue#0;class#STGame#0" expanded="false" />
+                <element signature="method#GetTrumpValueInText#0;class#STGame#0" expanded="false" />
+                <element signature="method#GetIndexByCardIDOfCardInHand#0;class#STGame#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -908,7 +920,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477534581380</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="fixed messages">
+      <created>1477536357949</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1477536357949</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -979,7 +998,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dEMO" />
     <MESSAGE value="dEMO 2" />
     <MESSAGE value="fixed player View" />
     <MESSAGE value="game.main" />
@@ -1004,11 +1022,12 @@
     <MESSAGE value="compare message edited" />
     <MESSAGE value="welcome labal" />
     <MESSAGE value="card Change" />
-    <option name="LAST_COMMIT_MESSAGE" value="card Change" />
+    <MESSAGE value="fixed messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed messages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="34" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1193,12 +1212,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/STGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="177" column="68" selection-start-line="177" selection-start-column="68" selection-end-line="177" selection-end-column="68" />
+        <state relative-caret-position="204">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#2240#2248#0" expanded="true" />
+            <element signature="method#setPlayers#0;class#STGame#0" expanded="false" />
+            <element signature="method#SelectDealer#0;class#STGame#0" expanded="false" />
+            <element signature="method#ChangePlayer#0;class#STGame#0" expanded="false" />
+            <element signature="method#DealCardsToEachPlayer#0;class#STGame#0" expanded="false" />
+            <element signature="e#2218#2226#0" expanded="true" />
+            <element signature="method#calculateNextPlayerID#0;class#STGame#0" expanded="false" />
+            <element signature="method#GetCardFromDeck#0;class#STGame#0" expanded="false" />
+            <element signature="method#PlayRandomCard#0;class#STGame#0" expanded="false" />
+            <element signature="method#GetTrumpCardIfExist#0;class#STGame#0" expanded="false" />
+            <element signature="method#ChangeTrumpCategory#0;class#STGame#0" expanded="false" />
+            <element signature="method#CompareAndReturnACard#0;class#STGame#0" expanded="false" />
+            <element signature="method#ValidatePlayedCard#0;class#STGame#0" expanded="false" />
+            <element signature="method#AfterCardPlay#0;class#STGame#0" expanded="false" />
+            <element signature="method#GetTrumpValue#0;class#STGame#0" expanded="false" />
+            <element signature="method#GetTrumpValueInText#0;class#STGame#0" expanded="false" />
+            <element signature="method#GetIndexByCardIDOfCardInHand#0;class#STGame#0" expanded="false" />
           </folding>
         </state>
       </provider>
